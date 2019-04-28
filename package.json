@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "merlot",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "frontpage of creative labs.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "michaelnyu",
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "gatsby": "^2.3.31",
@@ -26,7 +26,14 @@
     "prettier": "^1.17.0"
   },
   "keywords": [
-    "gatsby"
+    "creative",
+    "labs",
+    "lab",
+    "ucla",
+    "design",
+    "cs",
+    "computer",
+    "science"
   ],
   "license": "MIT",
   "scripts": {
@@ -39,9 +46,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/UCLA-Creative-Labs/merlot"
   }
 }
