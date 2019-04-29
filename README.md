@@ -10,6 +10,8 @@ Switch to our version of node with `nvm use`.
 
 We are using npm as a package manager. Run `npm install` to pull in packages.
 
+We are using gatsby, install their cli with: `npm install -g gatsby-cli`.
+
 ### Development Instructions
 
 ```
