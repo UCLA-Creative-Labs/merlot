@@ -1,5 +1,5 @@
 dev:
-	gatsby develop
+	npm run dev
 
 fmt:
 	npm run format
