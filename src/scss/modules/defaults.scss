@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Modak';
+  font-weight: 500;
+  font-style: normal;
+  src: url('/fonts/Modak-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'RobotoMono';
+  font-weight: 500;
+  font-style: normal;
+  src: url('/fonts/RobotoMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Corben';
+  font-weight: 500;
+  font-style: normal;
+  src: url('/fonts/Corben-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Corben';
+  font-weight: 900;
+  font-style: normal;
+  src: url('/fonts/Corben-Bold.ttf') format('truetype');
+}
+
+//Variables
+$darkBlue: #1f4a74;
+$pink: #febd9f;
+$beige: #fff3d9;
+$orange: #f1662a;
+
+$break-mobile: 860px;
+$break-tablet: 1024px;
+$mobile-and-tablet: 1024px;
+$max-width: 1200px;
+
+body {
+  background: $beige;
+  margin: 0;
+  color: $darkBlue;
+  font-family: RobotoMono, monospace;
+  line-height: 139.8%;
+  font-size: 18px;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1.5;
+  margin: 0;
+  max-width: 800px;
+}
+
+h1 {
+  font-family: 'Modak', sans-serif;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 6%;
+  font-size: 1.9em;
+
+  @media screen and (max-width: $break-mobile) {
+    font-size: 23px;
+  }
+}
+
+h2 {
+  font-family: Corben, sans-serif;
+  font-weight: 900;
+  font-size: 1.4em;
+}
+
+h3 {
+  font-family: RobotoMono, monospace;
+  line-height: 139.8%;
+  font-size: 24px;
+}
