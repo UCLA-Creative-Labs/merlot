@@ -5,13 +5,13 @@ import Layout from '~/src/components/monads/layout';
 import SEO from '~/src/components/monads/seo';
 import '../scss/main.scss';
 
-const SecondPage = () => (
+const AboutPage = () => (
   <Layout>
     <SEO title='Projects' />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to='/'>Go back to the homepage</Link>
+    <h2>Hi from the second page</h2>
+    <h3>Welcome to page 2</h3>
+    <Link to='//'>Go back to the homepage</Link>
   </Layout>
 );
 
-export default SecondPage;
+export default AboutPage;
