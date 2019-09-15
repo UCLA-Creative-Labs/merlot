@@ -9,6 +9,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import Header from './header';
+import FacebookIcon from '~/src/images/facebook-icon.png';
+import TwitterIcon from '~/src/images/twitter-icon.png';
+import InstagramIcon from '~/src/images/instagram-icon.png';
+import MediumIcon from '~/src/images/medium-icon.png';
 
 const content = {
   margin: `0 auto`,
@@ -40,16 +44,16 @@ const Layout = ({ children }) => (
           <footer>
             <div class='footer_social'>
               <a href='https://www.facebook.com/uclacreatives/'>
-                <img src='~/src/images/facebook-icon.png' />
+                <img src={InstagramIcon} />
               </a>
               <a href='https://www.facebook.com/uclacreatives/'>
-                <img src='../../images/instagram-icon.png' />
+                <img src={FacebookIcon} />
               </a>
               <a href='https://www.facebook.com/uclacreatives/'>
-                <img src='../../images/twitter-icon.png' />
+                <img src={TwitterIcon} />
               </a>
               <a href='https://www.facebook.com/uclacreatives/'>
-                <img src='../../images/medium-icon.png' />
+                <img src={MediumIcon} />
               </a>
             </div>
             © {new Date().getFullYear()}, Built with love

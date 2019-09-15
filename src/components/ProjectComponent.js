@@ -1,9 +1,8 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import '../scss/team.scss';
+import '../scss/projects.scss';
 
-function TeamComponent(props) {
-  console.log(props);
+function ProjectComponenti(props) {
   return (
     <div className='team_component'>
       <div className='team_card'>

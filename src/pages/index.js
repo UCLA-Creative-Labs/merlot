@@ -17,7 +17,9 @@ const IndexPage = () => (
       </h3>
     </div>
 
-    <div class='home_summaries' />
+    <div class='home_summaries'>
+    
+    </div>
   </Layout>
 );
 

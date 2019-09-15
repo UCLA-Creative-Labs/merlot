@@ -164,6 +164,10 @@ footer {
 
   .footer_social {
     display: flex;
+    img {
+      width: 25px;
+      height: 25px;
+    }
   }
   a {
     padding: 10px 10px 0px 10px;
