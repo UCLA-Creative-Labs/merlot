@@ -5,6 +5,8 @@ module.exports = {
     author: `@michaelnyu`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
+
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -32,6 +34,13 @@ module.exports = {
       options: {
         path: `${__dirname}/blog`,
         name: 'blog-posts',
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `9936835svn0l`,
+        accessToken: `GZ9uOrsdRZ_8vFVAmo-zn8N-MbQooRvm0RDolqtTpx8`,
       },
     },
     `gatsby-transformer-remark`,
