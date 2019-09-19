@@ -8,18 +8,16 @@ import '../scss/main.scss';
 const IndexPage = () => (
   <Layout>
     <SEO title='Home' keywords={[`creative`, `labs`, `website`, `ucla`, `design`]} />
-    <div class='home_description'>
-      <h2>Bring your ideas to life.</h2>
-      <h3 class='marginTop20'>
-        Creative Labs seeks to empower students through innovation and build community on campus. <br />
-        By creating a collaborative environment, we bring together passionate students from a variety of
-        backgrounds to work on impactful projects and support students in their creative endeavors.
+    <div className='home content'>
+      <h1>Bring your ideas to life.</h1>
+      <h3 className='marginTop20'>
+        Creative Labs seeks to empower students through innovation and build community on campus. We bring
+        together passionate students from a variety of backgrounds to work on impactful projects and support
+        students in their creative endeavors.
       </h3>
     </div>
 
-    <div class='home_summaries'>
-    
-    </div>
+    <div className='home_summaries' />
   </Layout>
 );
 

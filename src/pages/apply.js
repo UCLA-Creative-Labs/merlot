@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import Layout from '~/src/components/monads/layout';
 import SEO from '~/src/components/monads/seo';
 
-function RecruitmentPage(props) {
+function ApplyPage(props) {
   return <Layout />;
 }
-export default RecruitmentPage;
+export default ApplyPage;

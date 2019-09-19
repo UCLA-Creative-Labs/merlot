@@ -1,9 +1,5 @@
 @import 'modules/defaults';
 
-.header {
-  background-color: $color-background;
-}
-
-.home_description {
-  max-width: 1200px;
+.home-description {
+  width: $max-width;
 }
