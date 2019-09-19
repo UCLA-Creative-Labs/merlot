@@ -7,7 +7,7 @@ function TeamComponent(props) {
   return (
     <div className='team_component'>
       <div className='team_card'>
-        <img src={require(`../images/team/${props.firstname}${props.lastname}.png`)} />
+        <img src={props.url} />
       </div>
       <div className='team_name'>
         <h3>

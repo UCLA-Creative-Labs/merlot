@@ -39,16 +39,15 @@ import '../../scss/main.scss';
 // );
 
 const Header = ({ siteTitle }) => (
-  <header class='header'>
-    <div class='headerContent'>
+  <header className='header'>
+    <div className='headerContent'>
       <h1>
-        <Link to='/' class='headerLink'>
+        <Link to='/' className='headerLink' id='logoType'>
           {siteTitle}
         </Link>
       </h1>
-      <Link to='/' class='headerLink' />
 
-      <div class='navBar'>
+      <div className='navBar'>
         <nav>
           <ul>
             <li>
@@ -64,7 +63,7 @@ const Header = ({ siteTitle }) => (
               <Link to='/events/'>Events</Link>
             </li>
             <li>
-              <Link to='/recruitment/'>Recruitment</Link>
+              <Link to='/apply/'>Apply</Link>
             </li>
           </ul>
         </nav>

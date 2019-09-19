@@ -1,50 +1,47 @@
 @font-face {
-  font-family: 'Modak';
-  font-weight: 500;
-  font-style: normal;
-  src: url('/fonts/Modak-Regular.ttf') format('truetype');
-}
-
-@font-face {
   font-family: 'RobotoMono';
   font-weight: 500;
   font-style: normal;
   src: url('/fonts/RobotoMono-Regular.ttf') format('truetype');
 }
-
 @font-face {
-  font-family: 'Corben';
+  font-family: 'RobotoMono';
   font-weight: 500;
   font-style: normal;
-  src: url('/fonts/Corben-Regular.ttf') format('truetype');
+  src: url('/fonts/RobotoMono-Bold.ttf') format('truetype');
 }
+
 @font-face {
-  font-family: 'Corben';
+  font-family: 'poop';
   font-weight: 900;
   font-style: normal;
   src: url('/fonts/Corben-Bold.ttf') format('truetype');
 }
 
 //Variables
-$color-primary: #1f4a74;
-$color-secondary-light: #febd9f;
-$color-background: #fff3d9;
-$color-secondary-dark: #f1662a;
 
+//Colors
+$primary: #fff6e5;
+$secondary: #fd8846;
+$black: #16293e;
+$white: #fffcf7;
+
+//Dimensions
 $break-mobile: 860px;
 $break-tablet: 1024px;
 $mobile-and-tablet: 1024px;
-$max-width: 1120px;
+$max-width: 1200px;
 
-$font-header: 'Modak';
-$font-subheader: 'Corben';
-$font-paragraph: 'RobotoMono';
+//Fonts
+$font-h1: 'Corben';
+$font-h2: 'RobotoMono';
+$font-h3: 'RobotoMono';
 
 body {
-  background: $color-background;
+  background: $primary;
   margin: 0;
-  color: $color-primary;
-  font-family: $font-paragraph, monospace;
+  color: $black;
+  font-family: $font-h3, monospace;
   line-height: 139.8%;
   font-size: 18px;
   font-weight: 500;
@@ -63,44 +60,86 @@ p {
   max-width: $max-width;
 }
 
-h1 {
-  font-family: $font-header, sans-serif;
+#logoType {
+  font-family: $font-h1, sans-serif;
+  font-weight: 900;
+  font-style: bold;
+  font-size: 48px;
+  line-height: 146.8%;
+  text-align: center;
+}
+.body1 {
+  font-family: $font-h3, sans-serif;
+  font-size: 16px;
   font-weight: 500;
+  line-height: 21px;
+}
+
+.body1-mobile {
+  font-family: $font-h3, sans-serif;
+  font-size: 14px;
+  line-height: 135%;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+}
+.body2 {
+  font-family: $font-h3, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 135%;
+}
+h1 {
+  font-family: $font-h1, sans-serif;
+  font-weight: 900;
+  font-style: normal;
   position: relative;
   display: inline-block;
-  letter-spacing: 4px;
-  font-size: 46px;
+  font-size: 32px;
+  line-height: 146.8%;
 
   @media screen and (max-width: $break-mobile) {
-    font-size: 23px;
-    letter-spacing: 3px;
+    font-size: 33px;
+    line-height: 61px;
   }
 }
 
 h2 {
-  font-family: $font-subheader, sans-serif;
-  font-weight: 900;
-  font-size: 1.4em;
+  font-family: $font-h2, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0.06em;
 }
 
 h3 {
-  font-family: $font-paragraph, monospace;
-  font-weight: 500;
+  font-family: $font-h2, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
   line-height: 139.8%;
-  font-size: 20px;
+  margin-top: 12px;
 }
 
 p {
-  font-family: $font-paragraph, monospace;
+  font-family: $font-h3, monospace;
   line-height: 139.8%;
   font-size: 16px;
 }
 
+.subtitle {
+  font-family: $font-h2, monospace;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 26px;
+  color: $secondary;
+}
+
 .header {
-  background: $color-background;
-  color: $color-primary;
-  margin-bottom: 1.45rem;
-  margin-top: 1rem;
+  background: $primary;
+  color: $black;
+  margin-bottom: 48px;
+  padding-bottom: 20px;
+  margin-top: 48px;
   z-index: 10;
   top: 0;
   left: 0;
@@ -109,13 +148,13 @@ p {
   .headerContent {
     margin: 0 auto;
     max-width: $max-width;
-    padding: 1.45rem 1.0875rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   .headerLink {
-    color: $color-primary !important;
+    color: $black !important;
+    font-weight: 900 !important;
     text-decoration: none !important;
   }
   ul {
@@ -165,12 +204,12 @@ footer {
   .footer_social {
     display: flex;
     img {
-      width: 25px;
-      height: 25px;
+      width: 32px;
+      height: 32px;
     }
   }
   a {
-    padding: 10px 10px 0px 10px;
+    padding: 7px 7px 0px 7px;
   }
 }
 
@@ -182,9 +221,8 @@ footer {
 }
 
 .content {
-  padding: 30px 0px 30px 0px;
   max-width: $max-width;
-  margin: auto;
+  margin-top: 56px;
   position: relative;
 
   @media screen and (max-width: $break-tablet) {

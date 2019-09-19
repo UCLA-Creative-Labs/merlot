@@ -10,9 +10,7 @@ function TeamComponent(props) {
         <img src={props.url} />
       </div>
       <div className='team_name'>
-        <h3>
-          {props.firstname} {props.lastname}
-        </h3>
+        <h3>{props.firstname}</h3>
       </div>
     </div>
   );
