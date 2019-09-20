@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 import Layout from '~/src/components/monads/layout';
 import SEO from '~/src/components/monads/seo';
-import HomeDescriptionComponent from '~src/components/HomeDescriptionComponent';
+// import HomeDescriptionComponent from '~src/components/HomeDescriptionComponent.js';
 import '../scss/main.scss';
 
 const IndexPage = () => (
