@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link, graphql } from 'gatsby';
 
 import Layout from '~/src/components/monads/layout';
-import TeamComponent from '~/src/components/TeamComponent.js';
+import TeamComponent from '~/src/components/team/TeamComponent.js';
 import SEO from '~/src/components/monads/seo';
 
 /*
@@ -10,7 +10,7 @@ function Team(props) {
     const data = props.data;
 }
 */
-function Team({ data }) {
+function TeamPage({ data }) {
   console.log(data);
   const getExecBoard = data.allContentfulTeamMembers.edges.map(edge => {
     // console.log(node);
@@ -65,4 +65,4 @@ export const query = graphql`
   }
 `;
 
-export default Team;
+export default TeamPage;
