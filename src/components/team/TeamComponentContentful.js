@@ -1,17 +1,16 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import '../scss/projects.scss';
+import '../../scss/team.scss';
 
-function ProjectComponenti(props) {
+function TeamComponent(props) {
+  console.log(props);
   return (
     <div className='team_component'>
       <div className='team_card'>
-        <img src={require(`../images/team/${props.firstname}${props.lastname}.png`)} />
+        <img src={props.url} />
       </div>
       <div className='team_name'>
-        <h3>
-          {props.firstname} {props.lastname}
-        </h3>
+        <h3>{props.firstname}</h3>
       </div>
     </div>
   );
