@@ -12,4 +12,4 @@ function HomeDescriptionComponent(props) {
     </div>
   );
 }
-export default ProjectModalComponent;
+export default HomeDescriptionComponent;

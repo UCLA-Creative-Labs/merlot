@@ -241,19 +241,28 @@ footer {
 
 .dropdown {
   border: 2px solid #fd8846;
+  background-color: transparent;
   box-sizing: border-box;
-  border-radius: 30px;
+  border-radius: 50px;
   width: 240px;
   height: 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 5px 5px 5px 15px;
   margin-bottom: 36px;
+  -webkit-appearance: none;
+
   img {
     width: 25px;
     height: auto;
   }
+}
+select:after {
+  width: 25px;
+  height: auto;
+  // background: url('../../images/chevron.png');
+  position: absolute;
 }
 
 .title-box {

@@ -6,7 +6,14 @@ import ProjectComponent from '~/src/components/projects/ProjectComponent.js';
 function ProjectQuarter(props) {
   return (
     <div className='project_quarter'>
-      <ProjectComponent name='Test Project' />
+      <ProjectComponent name={props.quarter} />
+      <ProjectComponent name={props.quarter} />
+      <ProjectComponent name={props.quarter} />
+      <ProjectComponent name={props.quarter} />
+      <ProjectComponent name={props.quarter} />
+      <ProjectComponent name={props.quarter} />
+      <ProjectComponent name={props.quarter} />
+      <ProjectComponent name={props.quarter} />
     </div>
   );
 }

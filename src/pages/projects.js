@@ -8,6 +8,10 @@ import ProjectQuarterSelector from '~/src/components/projects/ProjectQuarterSele
 import SEO from '~/src/components/monads/seo';
 
 function ProjectsPage({ data }) {
+  const [selectState, setSelectState] = React.useState('winter2019');
+
+  const quarters = { spring2019: 'Spring 2019', winter2019: 'Winter 2019' };
+
   return (
     <Layout>
       <div className='splash_text'>
@@ -15,10 +19,14 @@ function ProjectsPage({ data }) {
         <h3>We thrive on creativity — check out the drip our community has created.</h3>
       </div>
       <div>
-        <ProjectQuarterSelector />
+        <ProjectQuarterSelector
+          quarters={quarters}
+          selectedValue={selectState}
+          setSelectedValue={setSelectState}
+        />
       </div>
       <div>
-        <ProjectQuarter quarter='Spring 2019' />
+        <ProjectQuarter quarter={selectState} />
       </div>
     </Layout>
   );
