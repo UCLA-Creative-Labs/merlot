@@ -3,9 +3,17 @@ import { Link } from 'gatsby';
 
 import Layout from '~/src/components/monads/layout';
 import SEO from '~/src/components/monads/seo';
-// import HomeDescriptionComponent from '~src/components/HomeDescriptionComponent.js';
-import '../scss/main.scss';
 
+import DescriptionComponent from '~/src/components/DescriptionComponent.js';
+import '../scss/main.scss';
+const descriptions = {
+  Projects:
+    "Each quarter, immerse yourself in creativity through quarter-long, hands-on team projects. In the past, they've included photography, sustainable bean bag chairs, web applications, as well as music compositions.",
+  Workshops:
+    'Attend our beginner-friendly workshops to learn a variety of new skills in a wide range of creative topics, including UX/UI, Illustrations, Podcasts, and more!',
+  Events:
+    'Come join us at our various events, from barbecue socials to speaker and networking events led by talented professionals from different creative industries.',
+};
 const IndexPage = () => (
   <Layout>
     <SEO title='Home' keywords={[`creative`, `labs`, `website`, `ucla`, `design`]} />
@@ -18,7 +26,7 @@ const IndexPage = () => (
       </h3>
     </div>
 
-    <div className='home_summaries' />
+    <div className='home_descriptions'>{console.log(descriptions)}</div>
   </Layout>
 );
 

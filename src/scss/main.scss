@@ -1,1 +1,79 @@
 @import 'modules/defaults';
+
+//HOME
+
+//TEAM
+.team_container {
+  display: flex;
+  justify-content: left;
+}
+.team_component {
+  padding: 24px 42px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 268px;
+  height: 268px;
+}
+.team_card {
+  img {
+    width: 268px;
+    height: auto;
+  }
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.team_links {
+  img {
+    width: 32px;
+    height: 32px;
+    padding: 7px 7px 7px 0px;
+  }
+}
+
+.back {
+  background-color: $secondary-2;
+  display: none;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+  padding: 24px 24px 24px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.team_card:hover {
+  .back {
+    display: block;
+  }
+  .front {
+    display: none;
+  }
+}
+
+.team_name {
+  font-weight: 900;
+}
+
+//PROJECTS
+
+.project_card {
+  width: 265px;
+  height: 271px;
+  overflow: hidden;
+  border-radius: 16px;
+  position: relative;
+  margin: 24px 35px 24px 0px;
+  cursor: pointer;
+}
+
+.project_quarter {
+  width: $max-width;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
