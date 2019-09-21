@@ -17,7 +17,6 @@
   font-style: normal;
   src: url('/fonts/Corben-Bold.ttf') format('truetype');
 }
-
 //Variables
 
 //Colors
@@ -287,4 +286,8 @@ select:after {
     position: absolute;
     top: 0;
   }
+}
+
+.modal {
+  border-radius: 80px;
 }

@@ -17,8 +17,8 @@ function TeamPage({ data }) {
     return (
       <TeamComponent
         key={edge.node.name}
-        firstname={edge.node.name}
-        lastname={edge.node.name}
+        name={edge.node.name}
+        description={edge.node.description}
         url={edge.node.photo.file.url}
       />
     );
@@ -52,6 +52,7 @@ export const query = graphql`
       edges {
         node {
           name
+          description
           photo {
             __typename
             title

@@ -1,6 +1,6 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import '../../scss/projects.scss';
+import '../../scss/main.scss';
 import chevron from '~/src/images/chevron.png';
 
 function ProjectQuarterSelector(props) {

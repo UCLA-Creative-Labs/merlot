@@ -1,6 +1,6 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import '../../scss/team.scss';
+import '../../scss/main.scss';
 
 function TeamComponent(props) {
   console.log(props);

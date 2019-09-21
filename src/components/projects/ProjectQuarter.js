@@ -1,6 +1,6 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import '../../scss/projects.scss';
+import '../../scss/main.scss';
 import ProjectComponent from '~/src/components/projects/ProjectComponent.js';
 
 function ProjectQuarter(props) {
