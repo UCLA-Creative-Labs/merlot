@@ -1,18 +1,18 @@
 @font-face {
-  font-family: 'RobotoMono';
+  font-family: 'Roboto Mono';
   font-weight: 500;
   font-style: normal;
   src: url('/fonts/RobotoMono-Regular.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'RobotoMono';
+  font-family: 'Roboto Mono';
   font-weight: 500;
   font-style: normal;
   src: url('/fonts/RobotoMono-Bold.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'poop';
+  font-family: 'Corben';
   font-weight: 900;
   font-style: normal;
   src: url('/fonts/Corben-Bold.ttf') format('truetype');
@@ -35,8 +35,8 @@ $max-width: 1200px;
 
 //Fonts
 $font-h1: 'Corben';
-$font-h2: 'RobotoMono';
-$font-h3: 'RobotoMono';
+$font-h2: 'Roboto Mono';
+$font-h3: 'Roboto Mono';
 
 body {
   background: $primary;
