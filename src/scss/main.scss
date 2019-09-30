@@ -77,3 +77,38 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+
+//APPLY
+
+.positionTitle,
+.appDeadline {
+  position: relative;
+  text-align: center
+}
+
+
+.positionButton {
+  position: relative;
+  margin-left: 25%;
+  margin-right: 25%
+}
+
+
+
+.positionContainer {
+  display: table;
+  width: 100%
+}
+
+.container {
+  display: table-row
+}
+.projectLead,
+.projectMember,
+.boardMember {
+  display: table-cell;
+  width: 33%;
+  padding-left: 5px;
+  padding-right: 5px
+}
