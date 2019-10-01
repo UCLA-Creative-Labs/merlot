@@ -14,20 +14,28 @@ const descriptions = {
   Events:
     'Come join us at our various events, from barbecue socials to speaker and networking events led by talented professionals from different creative industries.',
 };
-const IndexPage = () => (
-  <Layout>
-    <SEO title='Home' keywords={[`creative`, `labs`, `website`, `ucla`, `design`]} />
-    <div className='home content'>
-      <h1>Bring your ideas to life.</h1>
-      <h3 className='marginTop20'>
-        Creative Labs seeks to empower students through innovation and build community on campus. We bring
-        together passionate students from a variety of backgrounds to work on impactful projects and support
-        students in their creative endeavors.
-      </h3>
-    </div>
+function IndexPage(props) {
+  return (
+    <Layout>
+      <SEO title='Home' keywords={[`creative`, `labs`, `website`, `ucla`, `design`]} />
+      <div className='splash_text'>
+        <h1>Bring your ideas to life.</h1>
+        <h3>
+          Creative Labs seeks to empower students through innovation and build community on campus. We bring
+          together passionate students from a variety of backgrounds to work on impactful projects and support
+          students in their creative endeavors.
+        </h3>
+      </div>
 
-    <div className='home_descriptions'>{console.log(descriptions)}</div>
-  </Layout>
-);
+      <div className='descriptions_container'>
+        {Object.keys(descriptions).map((title, index) => {
+          return (
+            <DescriptionComponent title={title} index={index} description={descriptions[title]} key={index} />
+          );
+        })}
+      </div>
+    </Layout>
+  );
+}
 
 export default IndexPage;

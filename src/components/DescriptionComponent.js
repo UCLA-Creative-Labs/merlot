@@ -16,9 +16,11 @@ function getImg(index) {
 }
 function DescriptionComponent(props) {
   return (
-    <div className='description_container'>
+    <div className='description'>
       <div className='description_top'>
-        <h2>{props.title}</h2>
+        <div className='description_text'>
+          <h2>{props.title}</h2>
+        </div>
         <img src={getImg(props.index)} />
       </div>
       <p className='body1'>{props.description}</p>

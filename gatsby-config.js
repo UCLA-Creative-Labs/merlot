@@ -44,6 +44,43 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
-    `gatsby-plugin-modal-routing`,
+    {
+      resolve: `gatsby-plugin-modal-routing`,
+      options: {
+        // A selector to set react-modal's app root to, default is `#___gatsby`
+        // See http://reactcommunity.org/react-modal/accessibility/#app-element
+        appElement: '#___gatsby',
+
+        // Object of props that will be passed to the react-modal container
+        // See http://reactcommunity.org/react-modal/#usage
+        modalProps: {
+          style: {
+            overlay: {
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundColor: 'rgba(255, 255, 255, 0.75)',
+            },
+            content: {
+              position: 'absolute',
+              top: '40px',
+              left: '200px',
+              right: '200px',
+              bottom: '40px',
+              background: '#FFF6E5',
+              overflow: 'hidden',
+              WebkitOverflowScrolling: 'touch',
+              borderRadius: '80px',
+              outline: 'none',
+              padding: '0px',
+              maxWidth: '975px',
+              maxHeight: '780px',
+            },
+          },
+        },
+      },
+    },
   ],
 };

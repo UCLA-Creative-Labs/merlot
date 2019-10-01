@@ -8,6 +8,7 @@ import ProjectQuarterSelector from '~/src/components/projects/ProjectQuarterSele
 import SEO from '~/src/components/monads/seo';
 
 function ProjectsPage({ data }) {
+  console.log(data);
   const [selectState, setSelectState] = React.useState('winter2019');
 
   const quarters = { spring2019: 'Spring 2019', winter2019: 'Winter 2019' };
@@ -26,29 +27,37 @@ function ProjectsPage({ data }) {
         />
       </div>
       <div>
-        <ProjectQuarter quarter={selectState} />
+        <ProjectQuarter
+          quarter={selectState}
+          projects={data.allContentfulProjects.edges.filter(edge => edge.node.projectQuarter === selectState)}
+        />
       </div>
     </Layout>
   );
 }
 
-// export const query = graphql`
-//   query ProjectsQuery {
-//     allContentfulProjects {
-//       edges {
-//         node {
-//           name
-//           photo {
-//             __typename
-//             title
-//             file {
-//               url
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
+export const query = graphql`
+  query ProjectsQuery {
+    allContentfulProjects {
+      edges {
+        node {
+          id
+          projectTitle
+          projectQuarter
+          description {
+            json
+          }
+          photo {
+            __typename
+            title
+            file {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default ProjectsPage;
