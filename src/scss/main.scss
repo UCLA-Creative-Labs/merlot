@@ -80,6 +80,20 @@
 
 
 //APPLY
+.projectLeadBG {
+  padding-left: 110px;
+  width: 150px;
+}
+
+.projectMemberBG {
+  padding-left: 110px;
+  width: 150px;
+}
+.boardMemberBG {
+  padding-left: 110px;
+  width: 170px;
+}
+
 
 .positionTitle,
 .appDeadline {
@@ -87,20 +101,23 @@
   text-align: center
 }
 
-
-.positionButton {
-  position: relative;
-  margin-left: 25%;
-  margin-right: 25%
+.positionDescription {
+  width: 80%
 }
 
 
+.positionButton {
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 25%;
+  margin-left: 25%;
+  margin-right: 25%
+}
 
 .positionContainer {
   display: table;
   width: 100%
 }
-
 .container {
   display: table-row
 }
@@ -110,5 +127,6 @@
   display: table-cell;
   width: 33%;
   padding-left: 5px;
-  padding-right: 5px
+  padding-right: 5px;
+  
 }

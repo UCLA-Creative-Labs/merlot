@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import "../../scss/main.scss";
 import "../../images/Button/Primary/Apply (scale).png"
 
@@ -9,16 +10,19 @@ function PositionComponent(props) {
                 
                 <div className="positionTitle">
                     <h2>{props.title}</h2>
-                </div>
+                </div> 
+
                 <div className="appDeadline">
                     <p>Closes: {props.deadline}</p>
                 </div>
-                
+                <br/>
                 <div className="positionDescription" >
-                    <p>{props.description}</p>
+                    <p className="body1" >{props.description}</p>
                     
                 </div>
-                <img className="positionButton" src={require('../../images/Button/Primary/Apply (scale).png')} />
+                <a href={props.appLink}>
+                    <img className="positionButton" src={require('../../images/Button/Primary/Apply (scale).png')} />
+                </a>
             </div>
         </div>
 
