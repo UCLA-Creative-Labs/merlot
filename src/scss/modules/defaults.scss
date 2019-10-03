@@ -6,8 +6,8 @@
 }
 @font-face {
   font-family: 'Roboto Mono';
-  font-weight: 500;
-  font-style: normal;
+  font-weight: 900;
+  font-style: bold;
   src: url('/fonts/RobotoMono-Bold.ttf') format('truetype');
 }
 
@@ -142,8 +142,7 @@ p {
   background: $primary;
   color: $black;
   margin-bottom: 48px;
-  padding-bottom: 20px;
-  margin-top: 48px;
+  margin-top: 40px;
   z-index: 10;
   top: 0;
   left: 0;
@@ -203,7 +202,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 36px;
+  margin-top: 28px;
 
   .footer_social {
     display: flex;
@@ -273,6 +273,8 @@ select:after {
   right: 0;
 }
 
+//MODAL (test)
+
 .modal-container {
   width: 973px;
   height: 775px;
@@ -290,4 +292,38 @@ select:after {
 
 .modal {
   border-radius: 80px;
+}
+
+//DescriptionComponent
+.descriptions_container {
+  margin-top: 56px;
+  max-width: 1074px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.description {
+  max-width: 267px;
+  height: auto;
+
+  .description_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 141px;
+
+    img {
+      z-index: -1;
+      object-fit: cover;
+      position: absolute;
+      width: 8%;
+    }
+  }
+
+  .body1 {
+    margin-top: 36px;
+  }
 }

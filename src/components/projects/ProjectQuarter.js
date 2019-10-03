@@ -6,14 +6,9 @@ import ProjectComponent from '~/src/components/projects/ProjectComponent.js';
 function ProjectQuarter(props) {
   return (
     <div className='project_quarter'>
-      <ProjectComponent name={props.quarter} />
-      <ProjectComponent name={props.quarter} />
-      <ProjectComponent name={props.quarter} />
-      <ProjectComponent name={props.quarter} />
-      <ProjectComponent name={props.quarter} />
-      <ProjectComponent name={props.quarter} />
-      <ProjectComponent name={props.quarter} />
-      <ProjectComponent name={props.quarter} />
+      {props.projects.map((edge, key) => {
+        return <ProjectComponent project={edge.node} key={key} />;
+      })}
     </div>
   );
 }

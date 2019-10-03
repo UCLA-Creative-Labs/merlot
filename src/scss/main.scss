@@ -1,7 +1,9 @@
 @import 'modules/defaults';
 
 //HOME
-
+.home {
+  margin-bottom: 56px;
+}
 //TEAM
 .team_container {
   display: flex;
@@ -78,8 +80,6 @@
   flex-wrap: wrap;
 }
 
-
-
 //APPLY
 .projectLeadBG {
   padding-left: 110px;
@@ -99,29 +99,25 @@
 .positionTitle,
 .appDeadline {
   position: relative;
-  text-align: center
+  text-align: center;
 }
-
-.positionDescription {
-  width: 80%
-}
-
 
 .positionButton {
   position: relative;
   margin-top: 10%;
   margin-bottom: 25%;
   margin-left: 25%;
-  margin-right: 25%
+  margin-right: 25%;
 }
 
 .positionContainer {
   display: table;
-  width: 100%
+  width: 100%;
 }
 .container {
-  display: table-row
+  display: table-row;
 }
+
 .projectLead,
 .projectMember,
 .boardMember {
@@ -129,5 +125,27 @@
   width: 33%;
   padding-left: 5px;
   padding-right: 5px;
-  
+}
+
+.project_content {
+  margin: 0 auto;
+  max-width: $max-width;
+  padding: 40px;
+  padding-top: 0px;
+  .project_img {
+    max-height: 272px;
+    width: 975px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    img {
+      flex-shrink: 0;
+      min-width: 100%;
+      min-height: 100%;
+      position: absolute;
+      left: 0;
+      padding: 0px;
+    }
+  }
 }

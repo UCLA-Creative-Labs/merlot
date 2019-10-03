@@ -1,32 +1,54 @@
-const path = require('path');
+const _ = require(`lodash`);
+const path = require(`path`);
+const slash = require(`slash`);
 
-exports.createPages = ({ actions, graphql }) => {
+// Implement the Gatsby API “createPages”. This is
+// called after the Gatsby bootstrap is finished so you have
+// access to any information necessary to programmatically
+// create pages.
+exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
-
-  const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`);
-
-  return graphql(`
-    {
-      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 1000) {
-        edges {
-          node {
-            frontmatter {
-              path
+  // The “graphql” function allows us to run arbitrary
+  // queries against the local Contentful graphql schema. Think of
+  // it like the site has a built-in database constructed
+  // from the fetched data that you can run queries against.
+  return graphql(
+    `
+      {
+        allContentfulProjects(limit: 1000) {
+          edges {
+            node {
+              id
+              slug
             }
           }
         }
       }
-    }
-  `).then(result => {
+    `,
+  ).then(result => {
     if (result.errors) {
-      return Promise.reject(result.errors);
+      throw result.errors;
     }
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    // Create Project pages
+    const projectTemplate = path.resolve(`./src/templates/project.js`);
+    // We want to create a detailed page for each
+    // project node. We'll just use the Contentful id for the slug.
+    _.each(result.data.allContentfulProjects.edges, edge => {
+      // Gatsby uses Redux to manage its internal state.
+      // Plugins and sites can use functions like "createPage"
+      // to interact with Gatsby.
+      console.log(edge.node.id);
       createPage({
-        path: node.frontmatter.path,
-        component: blogPostTemplate,
-        context: {}, // additional data can be passed via context
+        // Each page is required to have a `path` as well
+        // as a template component. The `context` is
+        // optional but is often necessary so the template
+        // can query data specific to each page.
+        path: `/projects/${edge.node.id}/`,
+        component: slash(projectTemplate),
+        context: {
+          id: edge.node.id,
+        },
       });
     });
   });
