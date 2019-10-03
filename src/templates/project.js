@@ -7,7 +7,7 @@ import Footer from '~/src/components/monads/footer';
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing';
 
 function ProjectModalComponent({ data }) {
-  console.log(data);
+  console.log("Data: ", data);
   function getContent() {
     return (
       <div className='project_content'>
@@ -16,6 +16,9 @@ function ProjectModalComponent({ data }) {
         </div>
         <div className='project_text'>
           <h1>{data.contentfulProjects.projectTitle}</h1>
+          <h1>Project Leads: {data.contentfulProjects.projectLeads}</h1>
+          <h1>Members: {data.contentfulProjects.members}</h1>
+          <h1>{JSON.parse(data.contentfulProjects.description.description).content[0].content[0].value}</h1>
         </div>
       </div>
     );
@@ -40,6 +43,11 @@ export const query = graphql`
       id
       slug
       projectTitle
+      description {
+        description
+      }
+      projectLeads
+      members
       photo {
         __typename
         title
