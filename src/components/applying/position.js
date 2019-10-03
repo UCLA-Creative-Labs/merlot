@@ -1,32 +1,36 @@
 import React from 'react';
-import { Link } from 'gatsby';
+
 import "../../scss/main.scss";
 import "../../images/Button/Primary/Apply (scale).png"
 
-function PositionComponent(props) {
-    return ( 
-        <div className="pos_component">
-            <div className="pos_card">
-                
-                <div className="positionTitle">
-                    <h2>{props.title}</h2>
-                </div> 
+import circles from '~/src/images/circles.png';
+import cylinders from '~/src/images/cylinders.png';
+import stars from '~/src/images/stars.png';
 
-                <div className="appDeadline">
-                    <p>Closes: {props.deadline}</p>
-                </div>
-                <br/>
-                <div className="positionDescription" >
-                    <p className="body1" >{props.description}</p>
-                    
-                </div>
-                <a href={props.appLink}>
-                    <img className="positionButton" src={require('../../images/Button/Primary/Apply (scale).png')} />
-                </a>
-            </div>
-        </div>
-
-    );
+function getImg(index) {
+  if (index == 0) {
+    return circles;
+  } else if (index == 1) {
+    return cylinders;
+  } else {
+    return stars;
+  }
 }
-
-export default PositionComponent;
+function ApplyComponent(props) {
+  return (
+    <div className='description'>
+      <div className='description_top'>
+        <div className='description_text'>
+          <h2>{props.title}</h2>
+        </div>
+        <img src={getImg(props.index)} />
+      </div>
+      <p className='body1'>{props.description}</p>
+      <br/>
+      <a href={props.appLink}>
+        <img className="positionButton" src={require('../../images/Button/Primary/Apply (scale).png')} />
+      </a>
+    </div>
+  );
+}
+export default ApplyComponent;

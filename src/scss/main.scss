@@ -81,52 +81,18 @@
 }
 
 //APPLY
-.projectLeadBG {
-  padding-left: 110px;
-  width: 150px;
-}
 
-.projectMemberBG {
-  padding-left: 110px;
-  width: 150px;
-}
-.boardMemberBG {
-  padding-left: 110px;
-  width: 170px;
+.appPosition {
+  padding: 24px 42px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 268px;
+  height: 268px;
 }
 
 
-.positionTitle,
-.appDeadline {
-  position: relative;
-  text-align: center;
-}
 
-.positionButton {
-  position: relative;
-  margin-top: 10%;
-  margin-bottom: 25%;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-.positionContainer {
-  display: table;
-  width: 100%;
-}
-.container {
-  display: table-row;
-}
-
-.projectLead,
-.projectMember,
-.boardMember {
-  display: table-cell;
-  width: 33%;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
+//Projects
 .project_content {
   margin: 0 auto;
   max-width: $max-width;

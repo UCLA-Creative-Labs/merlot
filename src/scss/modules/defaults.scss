@@ -294,6 +294,19 @@ select:after {
   border-radius: 80px;
 }
 
+
+
+//ApplyComponent
+.positionContainer {
+  margin-top: 56px;
+  max-width: 1074px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+
 //DescriptionComponent
 .descriptions_container {
   margin-top: 56px;
@@ -303,6 +316,8 @@ select:after {
   justify-content: space-between;
   margin: auto;
 }
+
+
 
 .description {
   max-width: 267px;

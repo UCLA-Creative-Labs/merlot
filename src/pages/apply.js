@@ -3,8 +3,27 @@ import { Link } from 'gatsby';
 
 import Layout from '~/src/components/monads/layout';
 import SEO from '~/src/components/monads/seo';
-import PositionComponent from '../components/applying/position';
+import ApplyComponent from '../components/applying/position';
 import '../scss/main.scss';
+
+
+const descriptions = {
+  1:
+    "As a project lead, you will be in charge of managing the overall direction of your project--don’t worry if you’re new to this, we will have a seminar just for you. ",
+  2:
+    'As a project member, you will assist a lead with whatever tasks you are assigned. What you do depends on the specific  project you apply to.',
+  3:
+    'Join the team behind everything! There are different categories you can apply to: business, design, dev, marketing,, idk what else sorry omf',
+};
+
+const links = {
+  1:
+   "www.google.com/",
+  2:
+   "www.google.com/",
+  3:
+   "www.google.com/"
+}
 
 function ApplyPage(props) {
   return (
@@ -16,38 +35,11 @@ function ApplyPage(props) {
           possible interview.
         </h3>
       </div>
+
       <div className='positionContainer'>
-        <div className='container'>
-          <div className='projectLead'>
-            <img className='projectLeadBG' src={require('../images/circles.png')}></img>
-            <PositionComponent
-              title='Project Lead'
-              deadline='September 27'
-              description='As a project lead, you will be in charge of managing the overall direction of your project--don’t worry if you’re new to this, we will have a seminar just for you. '
-              appLink='https://tinyurl.com/y3lavrw9'
-            />
-          </div>
-
-          <div className='projectMember'>
-            <img className='projectMemberBG' src={require('../images/cylinders.png')}></img>
-            <PositionComponent
-              title='Project Member'
-              deadline='September 27'
-              description='As a project member, you will assist a lead with whatever tasks you are assigned. What you do depends on the specific  project you apply to.'
-              appLink='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-            />
-          </div>
-
-          <div className='boardMember'>
-            <img className='boardMemberBG' src={require('../images/stars.png')}></img>
-            <PositionComponent
-              title='Board Member'
-              deadline='September 27'
-              description='Join the team behind everything! There are different categories you can apply to: business, design, dev, marketing,, idk what else sorry omf'
-              appLink='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-            />
-          </div>
-        </div>
+            <ApplyComponent title="Project Lead" index= "1" description={descriptions[1]} key="1" appLink={links[1]}/>
+            <ApplyComponent title="Project Member" index= "2" description={descriptions[2]} key="2" appLink={links[2]}/>
+            <ApplyComponent title="Board Member" index= "3" description={descriptions[3]} key="3" appLink={links[3]}/>
       </div>
     </Layout>
   );
