@@ -1,22 +1,25 @@
-@font-face {
-  font-family: 'Roboto Mono';
-  font-weight: 500;
-  font-style: normal;
-  src: url('/fonts/RobotoMono-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Roboto Mono';
-  font-weight: 900;
-  font-style: bold;
-  src: url('/fonts/RobotoMono-Bold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Corben';
-  font-weight: 900;
-  font-style: normal;
-  src: url('/fonts/Corben-Bold.ttf') format('truetype');
-}
+// @font-face {
+//   font-family: 'Roboto Mono';
+//   font-weight: 500;
+//   font-style: normal;
+//   src: url('/fonts/RobotoMono-Regular.ttf') format('truetype');
+// }
+// @font-face {
+//   font-family: 'Roboto Mono';
+//   font-weight: 900;
+//   font-style: bold;
+//   src: url('/fonts/RobotoMono-Bold.ttf') format('truetype');
+// }
+//
+// @font-face {
+//   font-family: 'Corben';
+//   font-weight: 900;
+//   font-style: normal;
+//   src: url('/fonts/Corben-Bold.ttf') format('truetype');
+// }
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Corben:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:700&display=swap');
 //Variables
 
 //Colors

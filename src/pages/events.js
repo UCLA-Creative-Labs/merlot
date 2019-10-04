@@ -20,7 +20,7 @@ function EventsPage(props) {
         <h1>Upcoming Events</h1>
         <a href='https://www.facebook.com/events/405285813515890/'>
           <h3>
-            <u>Friday 10/4: First Genral Meeting 🤠</u>
+            <u>Friday 10/4: First General Meeting 🤠</u>
           </h3>
         </a>
         <h3>Wednesday 10/16: Careers in Design Student Panel</h3>
