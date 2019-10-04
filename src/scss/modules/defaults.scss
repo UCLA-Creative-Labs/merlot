@@ -108,6 +108,8 @@ h2 {
   font-family: $font-h2, sans-serif;
   font-weight: bold;
   font-size: 30px;
+  position: relative;
+  display: inline-block;
   line-height: 40px;
   letter-spacing: 0.06em;
 }
@@ -117,6 +119,8 @@ h3 {
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
+  position: relative;
+  display: inline-block;
   line-height: 139.8%;
   margin-top: 12px;
 }
@@ -125,6 +129,8 @@ p {
   font-family: $font-h3, monospace;
   line-height: 139.8%;
   font-size: 16px;
+  position: relative;
+  display: inline-block;
 }
 
 .subtitle {
@@ -325,7 +331,7 @@ select:after {
 
   .description_top {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 141px;

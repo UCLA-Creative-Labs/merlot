@@ -8,9 +8,9 @@ import cylinders from '~/src/images/cylinders.png';
 import stars from '~/src/images/stars.png';
 
 function getImg(index) {
-  if (index == 0) {
+  if (index == 1) {
     return circles;
-  } else if (index == 1) {
+  } else if (index == 2) {
     return cylinders;
   } else {
     return stars;

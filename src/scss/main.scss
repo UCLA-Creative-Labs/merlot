@@ -80,19 +80,6 @@
   flex-wrap: wrap;
 }
 
-//APPLY
-
-.appPosition {
-  padding: 24px 42px 0px 0px;
-  display: flex;
-  flex-direction: column;
-  width: 268px;
-  height: 268px;
-}
-
-
-
-//Projects
 .project_content {
   margin: 0 auto;
   max-width: $max-width;
@@ -108,10 +95,24 @@
     img {
       flex-shrink: 0;
       min-width: 100%;
-      min-height: 100%;
+      height: auto;
       position: absolute;
       left: 0;
       padding: 0px;
     }
   }
+  .project_text {
+    z-index: 1;
+    margin-top: 36px;
+  }
+}
+
+//APPLY
+
+.appPosition {
+  padding: 24px 42px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 268px;
+  height: 268px;
 }
