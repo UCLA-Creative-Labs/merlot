@@ -11,7 +11,6 @@ function Team(props) {
 }
 */
 function TeamPage({ data }) {
-  console.log(data);
   const getExecBoard = data.allContentfulTeamMembers.edges
     .filter(edge => edge.node.title === 'execboard')
     .map(edge => {
@@ -41,7 +40,6 @@ function TeamPage({ data }) {
         />
       );
     });
-  console.log(data, data.allContentfulTeamMembers.edges, getExecBoard);
 
   return (
     <Layout>

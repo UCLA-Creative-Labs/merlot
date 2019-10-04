@@ -4,7 +4,6 @@ import '../../scss/main.scss';
 import chevron from '~/src/images/chevron.png';
 
 function ProjectQuarterSelector(props) {
-  console.log(props.quarters);
   const onChange = e => {
     props.setSelectedValue(e.target.value);
   };
@@ -21,5 +20,3 @@ function ProjectQuarterSelector(props) {
   );
 }
 export default ProjectQuarterSelector;
-//   <div className='subtitle'>Spring 2019</div>
-//   <img src={chevron} />

@@ -7,7 +7,6 @@ import Footer from '~/src/components/monads/footer';
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing';
 
 function ProjectModalComponent({ data }) {
-  console.log('Data: ', data);
   function getContent() {
     return (
       <div className='project_content'>

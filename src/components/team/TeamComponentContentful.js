@@ -3,7 +3,6 @@ import React from 'react';
 import '../../scss/main.scss';
 
 function TeamComponent(props) {
-  console.log(props);
   return (
     <div className='team_component'>
       <div className='team_card'>

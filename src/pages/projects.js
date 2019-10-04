@@ -8,7 +8,6 @@ import ProjectQuarterSelector from '~/src/components/projects/ProjectQuarterSele
 import SEO from '~/src/components/monads/seo';
 
 function ProjectsPage({ data }) {
-  console.log(data);
   const [selectState, setSelectState] = React.useState('spring2019');
 
   const quarters = { spring2019: 'Spring 2019', winter2019: 'Winter 2019' };
