@@ -80,17 +80,17 @@ h1 pre {
 .body1 {
   font-family: $font-h3, sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: normal;
   line-height: 21px;
+  @media screen and (max-width: $break-mobile) {
+    font-family: $font-h3, sans-serif;
+    font-size: 14px !important;
+    line-height: 135% !important;
+    font-weight: normal;
+    letter-spacing: -0.045em !important;
+  }
 }
 
-.body1-mobile {
-  font-family: $font-h3, sans-serif;
-  font-size: 14px;
-  line-height: 135%;
-  font-weight: 500;
-  letter-spacing: -0.045em;
-}
 .body2 {
   font-family: $font-h3, sans-serif;
   font-weight: 500;
@@ -131,6 +131,13 @@ h3 {
   display: inline-block;
   line-height: 139.8%;
   margin-top: 12px;
+  @media screen and (max-width: $break-mobile) {
+    font-family: $font-h3, sans-serif;
+    font-size: 14px !important;
+    line-height: 135% !important;
+    font-weight: 500;
+    letter-spacing: -0.045em !important;
+  }
 }
 
 p {
@@ -257,11 +264,15 @@ footer {
 
   @media screen and (max-width: $break-tablet) {
     padding: 15px 0px 15px 0px;
+    margin-top: 36px;
   }
 }
 
 .splash_text {
   margin-bottom: 48px;
+  @media screen and (max-width: $break-mobile) {
+    margin-bottom: 12px !important;
+  }
 }
 
 .dropdown {
@@ -338,11 +349,28 @@ select:after {
   align-items: center;
   justify-content: space-between;
   margin: auto;
+  @media screen and (max-width: $break-mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: initial !important;
+  }
 }
 
 .description {
-  max-width: 267px;
+  max-width: 275px;
   height: auto;
+  h2 {
+    @media screen and (max-width: $break-mobile) {
+      font-family: $font-h3, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      position: relative;
+      display: inline-block;
+      line-height: 139.8%;
+      margin-top: 12px;
+    }
+  }
 
   .description_top {
     display: flex;
@@ -357,10 +385,18 @@ select:after {
       position: absolute;
       width: 8%;
     }
+    @media screen and (max-width: $break-mobile) {
+      height: 46px;
+      margin-top: 36px;
+      justify-content: flex-start !important;
+    }
   }
 
   .body1 {
     margin-top: 36px;
+    @media screen and (max-width: $break-mobile) {
+      margin-top: 8px;
+    }
   }
 }
 
@@ -374,4 +410,10 @@ select:after {
     width: 100%;
     overflow-x: scroll;
   }
+}
+
+a .button {
+  background: #fd8846;
+  border-radius: 40px;
+  color: white;
 }

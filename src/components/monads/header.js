@@ -54,6 +54,9 @@ const Header = ({ siteTitle }) => (
               <Link to='/'>Home</Link>
             </li>
             <li>
+              <a href='https://forms.gle/hAczEAMXoxve6VCA7'>Apply</a>
+            </li>
+            <li>
               <Link to='/projects/'>Projects</Link>
             </li>
             <li>
@@ -64,9 +67,6 @@ const Header = ({ siteTitle }) => (
             </li>
             <li>
               <Link to='/alumni/'>Alumni</Link>
-            </li>
-            <li>
-              <Link to='/apply/'>Apply</Link>
             </li>
           </ul>
         </nav>

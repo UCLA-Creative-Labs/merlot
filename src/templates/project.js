@@ -53,7 +53,6 @@ export const query = graphql`
   query($id: String!) {
     contentfulProjects(id: { eq: $id }) {
       id
-      slug
       projectTitle
       description {
         description
