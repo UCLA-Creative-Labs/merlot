@@ -14,6 +14,7 @@ function TeamPage({ data }) {
   console.log(data);
   const getExecBoard = data.allContentfulTeamMembers.edges.map(edge => {
     // console.log(node);
+    
     return (
       <TeamComponent
         key={edge.node.name}
@@ -23,13 +24,25 @@ function TeamPage({ data }) {
       />
     );
   });
+  const getBoard = data.allContentfulTeamMembers.edges.map(edge => {
+    return (
+      <TeamComponent
+        key={edge.node.name}
+        name={edge.node.name}
+        description={edge.node.description}
+        url={edge.node.photo.file.url}
+      />
+    )
+  })
   console.log(data, data.allContentfulTeamMembers.edges, getExecBoard);
 
   return (
     <Layout>
       <div className='splash_text '>
         <h1>Team.</h1>
-        <h3>Meet the amazing crew working backstage to make everything Creative Labs does possible. </h3>
+        <br/>
+        <h3>
+          Meet the amazing crew working backstage to make everything Creative Labs does possible. </h3>
       </div>
 
       <div className='content'>
@@ -39,6 +52,8 @@ function TeamPage({ data }) {
         </div>
         <div className='team_board marginTop40'>
           <h2>Board</h2>
+          {//<div className='team_container'>{getBoard}</div>
+          }
         </div>
       </div>
     </Layout>

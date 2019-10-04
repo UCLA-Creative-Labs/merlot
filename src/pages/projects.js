@@ -17,8 +17,12 @@ function ProjectsPage({ data }) {
     <Layout>
       <div className='splash_text'>
         <h1>We make things.</h1>
-        <h3>We thrive on creativity — check out the drip our community has created.</h3>
+        <br/>
+        <h3>
+          We thrive on creativity — check out the drip our community has created.
+        </h3>
       </div>
+
       <div>
         <ProjectQuarterSelector
           quarters={quarters}

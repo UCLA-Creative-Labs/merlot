@@ -11,16 +11,18 @@ function ProjectModalComponent({ data }) {
   function getContent() {
     return (
       <div className='project_content'>
-        <div className='project_img'>
+        {/*<div className='project_img'>
           <img src={data.contentfulProjects.photo.file.url} />
         </div>
+        */}
+        
         <div className='project_text'>
           <h1><pre>{data.contentfulProjects.projectTitle}</pre></h1><br/>
           <h3><pre>Project Leads: </pre></h3>
           <p className='body1'>{data.contentfulProjects.projectLeads}</p><br/>
           <h3><pre>Members: </pre></h3>
-          <p className='body1'><pre>{data.contentfulProjects.members}</pre></p><br/>
-          <p className='body1'><pre>{JSON.parse(data.contentfulProjects.description.description).content[0].content[0].value}</pre></p>
+          <p className='body1'><pre className="overflows">{data.contentfulProjects.members}</pre></p><br/>
+          <p className='body1'><pre className="overflows">{JSON.parse(data.contentfulProjects.description.description).content[0].content[0].value}</pre></p>
         </div>
       </div>
     );

@@ -103,7 +103,13 @@
   }
   .project_text {
     z-index: 1;
+    display: block;
     margin-top: 36px;
+    overflow-wrap: normal;
+    .overflows {
+      white-space: pre-wrap;
+      
+    }
   }
 }
 
