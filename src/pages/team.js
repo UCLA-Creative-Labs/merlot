@@ -12,37 +12,43 @@ function Team(props) {
 */
 function TeamPage({ data }) {
   console.log(data);
-  const getExecBoard = data.allContentfulTeamMembers.edges.map(edge => {
-    // console.log(node);
-    
-    return (
-      <TeamComponent
-        key={edge.node.name}
-        name={edge.node.name}
-        description={edge.node.description}
-        url={edge.node.photo.file.url}
-      />
-    );
-  });
-  const getBoard = data.allContentfulTeamMembers.edges.map(edge => {
-    return (
-      <TeamComponent
-        key={edge.node.name}
-        name={edge.node.name}
-        description={edge.node.description}
-        url={edge.node.photo.file.url}
-      />
-    )
-  })
+  const getExecBoard = data.allContentfulTeamMembers.edges
+    .filter(edge => edge.node.title === 'execboard')
+    .map(edge => {
+      if (edge.node.photo == null) {
+        return null;
+      }
+      return edge.node.photo == null ? null : (
+        <TeamComponent
+          key={edge.node.name}
+          name={edge.node.name}
+          description={edge.node.description}
+          url={edge.node.photo.file.url}
+          // title={data.allContentfulTeamMembers.edges.filter(edge => edge.node.title === 'execboard')}
+        />
+      );
+    });
+  const getBoard = data.allContentfulTeamMembers.edges
+    .filter(edge => edge.node.title === 'board')
+    .map(edge => {
+      return (
+        <TeamComponent
+          key={edge.node.name}
+          name={edge.node.name}
+          description={edge.node.description}
+          url={edge.node.photo.file.url}
+          // title={data.allContentfulTeamMembers.edges.filter(edge => edge.node.title === 'board')}
+        />
+      );
+    });
   console.log(data, data.allContentfulTeamMembers.edges, getExecBoard);
 
   return (
     <Layout>
       <div className='splash_text '>
         <h1>Team.</h1>
-        <br/>
-        <h3>
-          Meet the amazing crew working backstage to make everything Creative Labs does possible. </h3>
+        <br />
+        <h3>Meet the amazing crew working backstage to make everything Creative Labs does possible. </h3>
       </div>
 
       <div className='content'>
@@ -52,8 +58,7 @@ function TeamPage({ data }) {
         </div>
         <div className='team_board marginTop40'>
           <h2>Board</h2>
-          {//<div className='team_container'>{getBoard}</div>
-          }
+          {<div className='team_container'>{getBoard}</div>}
         </div>
       </div>
     </Layout>
@@ -68,6 +73,7 @@ export const query = graphql`
         node {
           name
           description
+          title
           photo {
             __typename
             title

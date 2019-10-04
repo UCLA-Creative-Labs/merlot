@@ -63,6 +63,9 @@ const Header = ({ siteTitle }) => (
               <Link to='/events/'>Events</Link>
             </li>
             <li>
+              <Link to='/alumni/'>Alumni</Link>
+            </li>
+            <li>
               <Link to='/apply/'>Apply</Link>
             </li>
           </ul>

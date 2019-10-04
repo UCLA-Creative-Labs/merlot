@@ -69,6 +69,14 @@ p {
   line-height: 146.8%;
   text-align: center;
 }
+pre {
+  font-family: $font-h3, sans-serif;
+}
+
+h1 pre {
+  font-family: $font-h1, sans-serif;
+}
+
 .body1 {
   font-family: $font-h3, sans-serif;
   font-size: 16px;
@@ -160,23 +168,35 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: $mobile-and-tablet) {
+      flex-direction: column;
+    }
   }
   .headerLink {
     color: $black !important;
     font-weight: 900 !important;
     text-decoration: none !important;
+
+    @media screen and (max-width: $mobile-and-tablet) {
+      font-size: 36px !important;
+    }
   }
   ul {
     list-style-type: none;
     display: flex;
     position: relative;
     font-size: 16px;
+    @media screen and (max-width: $mobile-and-tablet) {
+      padding: 0 20px !important;
+      margin: 0;
+    }
   }
   li {
     padding: 8px 8px;
     margin: 0 12px;
   }
-  li:nth-child(5) {
+  li:nth-child(6) {
     margin-right: 0px;
     padding-right: 0px;
   }
@@ -234,7 +254,7 @@ footer {
   max-width: $max-width;
   margin-top: 56px;
   position: relative;
-  
+
   @media screen and (max-width: $break-tablet) {
     padding: 15px 0px 15px 0px;
   }
@@ -300,8 +320,6 @@ select:after {
   border-radius: 80px;
 }
 
-
-
 //ApplyComponent
 .positionContainer {
   margin-top: 56px;
@@ -312,7 +330,6 @@ select:after {
   margin: auto;
 }
 
-
 //DescriptionComponent
 .descriptions_container {
   margin-top: 56px;
@@ -322,8 +339,6 @@ select:after {
   justify-content: space-between;
   margin: auto;
 }
-
-
 
 .description {
   max-width: 267px;
@@ -346,5 +361,17 @@ select:after {
 
   .body1 {
     margin-top: 36px;
+  }
+}
+
+.ReactModal__Content {
+  overflow-y: auto !important;
+  background: $primary !important;
+}
+
+.navBar {
+  @media screen and (max-width: $break-mobile) {
+    width: 100%;
+    overflow-x: scroll;
   }
 }

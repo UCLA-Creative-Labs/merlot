@@ -15,17 +15,10 @@ function TeamComponent(props) {
   return (
     <div className='team_component'>
       <div className='team_card'>
-        <div className='front'>
-          <img src={props.url} />
-        </div>
+        <img src={props.url} />
         <div className='back'>
           <h3 className='subtitle'>{props.name}</h3>
           <p className='body1'>{props.description}</p>
-          <div className='team_links'>
-            <a href='https://creativelabsucla.com'>
-              <img src={MailIcon} />
-            </a>
-          </div>
         </div>
       </div>
     </div>

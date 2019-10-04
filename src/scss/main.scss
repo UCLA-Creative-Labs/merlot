@@ -8,6 +8,7 @@
 .team_container {
   display: flex;
   justify-content: left;
+  flex-wrap: wrap;
 }
 .team_component {
   padding: 24px 42px 0px 0px;
@@ -25,6 +26,7 @@
   height: 100%;
   width: 100%;
   border-radius: 16px;
+  position: relative;
 }
 
 .team_links {
@@ -36,6 +38,8 @@
 }
 
 .back {
+  position: absolute;
+  top: 0%;
   background-color: $secondary-2;
   display: none;
   overflow: hidden;
@@ -46,14 +50,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow-y: auto;
+  opacity: 0;
+  transition: 0.2s ease-in-out all;
+}
+
+.body1 {
+  padding-top: 10px;
+  font-size: 14px;
+  max-width: 90%;
 }
 .team_card:hover {
   .back {
-    display: block;
-  }
-  .front {
-    display: none;
+    opacity: 1;
   }
 }
 
@@ -103,13 +114,7 @@
   }
   .project_text {
     z-index: 1;
-    display: block;
     margin-top: 36px;
-    overflow-wrap: normal;
-    .overflows {
-      white-space: pre-wrap;
-      
-    }
   }
 }
 

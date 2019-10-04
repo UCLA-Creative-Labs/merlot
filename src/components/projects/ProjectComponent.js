@@ -12,7 +12,7 @@ function ProjectComponent(props) {
       <Link
         to={'/projects/' + props.project.id}
         state={{
-          modal: true,
+          modal: window.innerWidth > 1024 ? true : false,
         }}
       >
         <div className='project_card'>

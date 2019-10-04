@@ -41,6 +41,7 @@ module.exports = {
       options: {
         spaceId: `mox6p4rg5oof`,
         accessToken: `kEhWTP07K1zUky0t2V798lSIlXAMAdAx5oYoB0RRj9Q`,
+        forceFullSync: true,
       },
     },
     `gatsby-transformer-remark`,
