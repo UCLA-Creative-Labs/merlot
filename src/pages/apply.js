@@ -9,7 +9,7 @@ import '../scss/main.scss';
 const descriptions = {
   1: 'As a project lead, you will be in charge of managing the overall direction of your project--don’t worry if you’re new to this, we will have a seminar just for you. ',
   2: 'As a project member, you will assist a lead with whatever tasks you are assigned. What you do depends on the specific  project you apply to.',
-  3: 'Join the team behind everything! There are different categories you can apply to: business, design, dev, marketing,, idk what else sorry omf',
+  3: 'Join the team behind everything! There are different categories you can apply to: business, design, dev, marketing, and more',
 };
 
 const links = {
