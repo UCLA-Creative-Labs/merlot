@@ -16,7 +16,7 @@ function getImg(index) {
 }
 function DescriptionComponent(props) {
   var linkHelper = '/' + props.title.toLowerCase() + '/';
-  if (props.title == "Workshops") {
+  if (props.title == 'Workshops') {
     linkHelper = '/events/';
   }
   return (
@@ -24,7 +24,9 @@ function DescriptionComponent(props) {
       <div className='description_top'>
         <div className='description_text'>
           <h2>
-            <Link className='h2' to={linkHelper}>{props.title}</Link>
+            <Link className='h2' to={linkHelper}>
+              {props.title}
+            </Link>
           </h2>
         </div>
         <img src={getImg(props.index)} />

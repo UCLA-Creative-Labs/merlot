@@ -10,11 +10,9 @@ function ProjectModalComponent({ data }) {
   function getContent() {
     return (
       <div className='project_content'>
-        {
-          // <div className='project_img'>
-          //   <img src={data.contentfulProjects.photo.file.url} />
-          // </div>
-        }
+        <div className='project_img'>
+          <img src={data.contentfulProjects.photo.file.url} />
+        </div>
 
         <div className='project_text'>
           <h1>{data.contentfulProjects.projectTitle}</h1>

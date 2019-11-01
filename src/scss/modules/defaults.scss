@@ -349,7 +349,6 @@ select:after {
   margin-top: 56px;
   max-width: 1074px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin: auto;
   @media screen and (max-width: $break-mobile) {
@@ -419,4 +418,5 @@ a .button {
   background: #fd8846;
   border-radius: 40px;
   color: white;
+  text-align: center;
 }

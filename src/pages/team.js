@@ -23,6 +23,8 @@ function TeamPage({ data }) {
           name={edge.node.name}
           description={edge.node.description}
           url={edge.node.photo.file.url}
+          website={edge.node.website}
+          instagram={edge.node.instagram}
           // title={data.allContentfulTeamMembers.edges.filter(edge => edge.node.title === 'execboard')}
         />
       );
@@ -36,6 +38,7 @@ function TeamPage({ data }) {
           name={edge.node.name}
           description={edge.node.description}
           url={edge.node.photo.file.url}
+          instagram={edge.node.instagram}
           // title={data.allContentfulTeamMembers.edges.filter(edge => edge.node.title === 'board')}
         />
       );
@@ -72,6 +75,11 @@ export const query = graphql`
           name
           description
           title
+          website
+          linkedin
+          medium
+          twitter
+          instagram
           photo {
             __typename
             title

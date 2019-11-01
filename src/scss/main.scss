@@ -11,7 +11,7 @@
   flex-wrap: wrap;
 }
 .team_component {
-  padding: 24px 42px 0px 0px;
+  padding: 24px 30px 0px 0px;
   display: flex;
   flex-direction: column;
   width: 268px;
@@ -46,21 +46,30 @@
   height: 100%;
   width: 100%;
   border-radius: 16px;
-  padding: 24px 24px 24px 12px;
+  // padding: 24px 24px 24px 12px;
+  padding: 14px 14px 14px 14px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   box-sizing: border-box;
   overflow-y: auto;
   opacity: 0;
   transition: 0.2s ease-in-out all;
+
+  img {
+    height: 28px;
+    width: 28px;
+    padding-right: 10px;
+  }
+}
+
+.team_socials {
+  display: flex;
 }
 
 .body1 {
   padding-top: 10px;
-  font-size: 14px;
-  max-width: 90%;
+  font-size: 12px;
 }
 .team_card:hover {
   .back {
@@ -82,6 +91,10 @@
   position: relative;
   margin: 24px 35px 24px 0px;
   cursor: pointer;
+  img {
+    height: 271px;
+    width: auto;
+  }
 }
 
 .project_quarter {
@@ -96,20 +109,21 @@
   max-width: $max-width;
   padding: 40px;
   padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   .project_img {
     max-height: 272px;
-    width: 975px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    max-width: $max-width;
     img {
-      flex-shrink: 0;
-      min-width: 100%;
+      width: 1000px;
       height: auto;
-      position: absolute;
-      left: 0;
-      padding: 0px;
     }
   }
   .project_text {
@@ -126,9 +140,6 @@
   flex-direction: column;
   width: 268px;
   height: 268px;
-}
-
-pre {
 }
 
 .eventsContent {

@@ -9,7 +9,7 @@ import TwitterIcon from '~/src/images/twitter-icon.png';
 import InstagramIcon from '~/src/images/instagram-icon.png';
 import MediumIcon from '~/src/images/medium-icon.png';
 import LinkedinIcon from '~/src/images/linkedin-icon.png';
-import MailIcon from '~/src/images/mail-icon.png';
+import WebsiteIcon from '~/src/images/mail-icon.png';
 
 function TeamComponent(props) {
   return (
@@ -17,8 +17,18 @@ function TeamComponent(props) {
       <div className='team_card'>
         <img src={props.url} />
         <div className='back'>
-          <h3 className='subtitle'>{props.name}</h3>
-          <p className='body1'>{props.description}</p>
+          <div className='back_text'>
+            <h3 className='subtitle'>{props.name}</h3>
+            <p className='body1'>{props.description}</p>
+          </div>
+          <div className='team_socials'>
+            <a href={props.website}>
+              <img src={WebsiteIcon} />
+            </a>
+            <a href={props.instagram}>
+              <img src={InstagramIcon} />
+            </a>
+          </div>
         </div>
       </div>
     </div>
