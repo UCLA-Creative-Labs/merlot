@@ -57,9 +57,14 @@
   transition: 0.2s ease-in-out all;
 
   img {
-    height: 28px;
-    width: 28px;
+    height: 32px;
+    width: 32px;
     padding-right: 10px;
+    margin-top: 10px;
+  }
+  .body1 {
+    padding-top: 10px;
+    font-size: 12px;
   }
 }
 
@@ -67,10 +72,6 @@
   display: flex;
 }
 
-.body1 {
-  padding-top: 10px;
-  font-size: 12px;
-}
 .team_card:hover {
   .back {
     opacity: 1;

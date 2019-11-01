@@ -22,12 +22,32 @@ function TeamComponent(props) {
             <p className='body1'>{props.description}</p>
           </div>
           <div className='team_socials'>
-            <a href={props.website}>
-              <img src={WebsiteIcon} />
-            </a>
-            <a href={props.instagram}>
-              <img src={InstagramIcon} />
-            </a>
+            {props.website != null && (
+              <a href={props.website}>
+                <img src={WebsiteIcon} />
+              </a>
+            )}
+
+            {props.instagram != null && (
+              <a href={props.instagram}>
+                <img src={InstagramIcon} />
+              </a>
+            )}
+            {props.linkedin != null && (
+              <a href={props.linkedin}>
+                <img src={LinkedinIcon} />
+              </a>
+            )}
+            {props.twitter != null && (
+              <a href={props.twitter}>
+                <img src={TwitterIcon} />
+              </a>
+            )}
+            {props.medium != null && (
+              <a href={props.medium}>
+                <img src={MediumIcon} />
+              </a>
+            )}
           </div>
         </div>
       </div>

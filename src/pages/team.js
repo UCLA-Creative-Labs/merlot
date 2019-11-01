@@ -25,6 +25,9 @@ function TeamPage({ data }) {
           url={edge.node.photo.file.url}
           website={edge.node.website}
           instagram={edge.node.instagram}
+          linkedin={edge.node.linkedin}
+          medium={edge.node.medium}
+          twitter={edge.node.twitter}
           // title={data.allContentfulTeamMembers.edges.filter(edge => edge.node.title === 'execboard')}
         />
       );
@@ -38,7 +41,11 @@ function TeamPage({ data }) {
           name={edge.node.name}
           description={edge.node.description}
           url={edge.node.photo.file.url}
+          website={edge.node.website}
           instagram={edge.node.instagram}
+          linkedin={edge.node.linkedin}
+          medium={edge.node.medium}
+          twitter={edge.node.twitter}
           // title={data.allContentfulTeamMembers.edges.filter(edge => edge.node.title === 'board')}
         />
       );
