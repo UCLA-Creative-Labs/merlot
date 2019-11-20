@@ -339,7 +339,6 @@ select:after {
   margin-top: 56px;
   max-width: 1074px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin: auto;
 }
@@ -359,7 +358,7 @@ select:after {
 }
 
 .description {
-  max-width: 275px;
+  max-width: 300px;
   height: auto;
   h2 {
     @media screen and (max-width: $break-mobile) {
@@ -373,7 +372,9 @@ select:after {
       margin-top: 12px;
     }
   }
-
+  .description_text {
+    text-align: center;
+  }
   .description_top {
     display: flex;
     flex-direction: row;

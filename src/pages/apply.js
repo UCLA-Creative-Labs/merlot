@@ -26,7 +26,10 @@ function ApplyPage(props) {
         <h3>
           No matter your major, you can be a part of the club. After applying you will recieve an email and a
           possible interview.
-        </h3>
+        </h3><br/><br/>
+        <h4>
+          Applications are currently closed. Check back soon for Winter 2020!
+        </h4>
       </div>
 
       <div className='positionContainer'>
