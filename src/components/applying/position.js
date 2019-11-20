@@ -16,6 +16,9 @@ function getImg(index) {
     return stars;
   }
 }
+// <a href={props.appLink}>
+//   <img className="positionButton" src={require('../../images/Button/Primary/Apply (scale).png')} />
+// </a>
 function ApplyComponent(props) {
   return (
     <div className='description'>
@@ -27,9 +30,7 @@ function ApplyComponent(props) {
       </div>
       <p className='body1'>{props.description}</p>
       <br/>
-      <a href={props.appLink}>
-        <img className="positionButton" src={require('../../images/Button/Primary/Apply (scale).png')} />
-      </a>
+
     </div>
   );
 }
