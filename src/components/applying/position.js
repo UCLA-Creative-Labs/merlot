@@ -16,10 +16,24 @@ function getImg(index) {
     return stars;
   }
 }
-// <a href={props.appLink}>
-//   <img className="positionButton" src={require('../../images/Button/Primary/Apply (scale).png')} />
-// </a>
 function ApplyComponent(props) {
+  if (props.title == 'Project Lead') {
+    return (
+      <div className='description'>
+        <div className='description_top'>
+          <div className='description_text'>
+            <h2>{props.title}</h2>
+          </div>
+          <img src={getImg(props.index)} />
+        </div>
+        <p className='body1'>{props.description}</p>
+        <br/>
+        <a href={props.appLink}>
+          <img className="positionButton" src={require('../../images/Button/Primary/Apply (scale).png')} />
+        </a>
+      </div>
+    );
+  }
   return (
     <div className='description'>
       <div className='description_top'>
@@ -30,7 +44,6 @@ function ApplyComponent(props) {
       </div>
       <p className='body1'>{props.description}</p>
       <br/>
-
     </div>
   );
 }

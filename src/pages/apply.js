@@ -13,7 +13,7 @@ const descriptions = {
 };
 
 const links = {
-  1: 'www.google.com/',
+  1: 'https://docs.google.com/forms/d/e/1FAIpQLSeIeA88hd1rVa2zsWWeeosGhEgjiYIC1ft6r4hhwHiKJgSWEw/viewform',
   2: 'www.google.com/',
   3: 'www.google.com/',
 };
@@ -26,10 +26,10 @@ function ApplyPage(props) {
         <h3>
           No matter your major, you can be a part of the club. After applying you will recieve an email and a
           possible interview.
-        </h3><br/><br/>
-        <h4>
-          Applications are currently closed. Check back soon for Winter 2020!
-        </h4>
+        </h3>
+        <br />
+        <br />
+        <h4>Project Lead apps are currently open!</h4>
       </div>
 
       <div className='positionContainer'>
