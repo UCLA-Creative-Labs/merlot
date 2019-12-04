@@ -18,9 +18,9 @@ function EventsPage(props) {
       </div>
       <div className='eventsContent'>
         <h1>Upcoming Events</h1>
-        <a href='https://www.facebook.com/events/538466830033456/'>
+        <a href='https://www.facebook.com/events/669951813536953/'>
           <h3>
-            <u>Friday 11/20: How to Notion for UCLA</u>
+            <u>Friday 12/6: Demo Day Fall 2019</u>
           </h3>
         </a>
       </div>
