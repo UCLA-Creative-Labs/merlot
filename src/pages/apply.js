@@ -29,7 +29,7 @@ function ApplyPage(props) {
         </h3>
         <br />
         <br />
-        <h4>Project Lead apps are currently open!</h4>
+        <h4>Check back on Jan 10th for project member apps!</h4>
       </div>
 
       <div className='positionContainer'>
