@@ -17,7 +17,7 @@ function getImg(index) {
   }
 }
 function ApplyComponent(props) {
-  if (props.title == 'Project Lead') {
+  if (false) {
     return (
       <div className='description'>
         <div className='description_top'>
