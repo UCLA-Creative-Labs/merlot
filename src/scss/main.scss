@@ -146,4 +146,7 @@
 .eventsContent {
   display: flex;
   flex-direction: column;
+  h3 {
+    margin-top: 18px;
+  }
 }
