@@ -13,9 +13,9 @@ const descriptions = {
 };
 
 const links = {
-  1: 'https://docs.google.com/forms/d/e/1FAIpQLSeIeA88hd1rVa2zsWWeeosGhEgjiYIC1ft6r4hhwHiKJgSWEw/viewform',
-  2: 'www.google.com/',
-  3: 'www.google.com/',
+  1: '',
+  2: 'https://forms.gle/vGWgzdzuYfYWABCEA',
+  3: '',
 };
 
 function ApplyPage(props) {
@@ -29,7 +29,7 @@ function ApplyPage(props) {
         </h3>
         <br />
         <br />
-        <h4>Check back on Jan 10th for project member apps!</h4>
+        <h4>Project member apps are now open! Due on Tuesday, January 14 at 1:00 PM.</h4>
       </div>
 
       <div className='positionContainer'>

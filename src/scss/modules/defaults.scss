@@ -437,3 +437,22 @@ a .button {
   color: white;
   text-align: center;
 }
+
+//ButtonComponent styling
+.button_container {
+  display: flex;
+  margin-top: 48px;
+}
+.button_link {
+  display: flex;
+  justify-content: center;
+  background-color: $secondary;
+  width: 200px;
+  height: 48px;
+  border-radius: 40px;
+  h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: $white;
+  }
+}
