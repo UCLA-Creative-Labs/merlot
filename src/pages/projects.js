@@ -10,7 +10,12 @@ import SEO from '~/src/components/monads/seo';
 function ProjectsPage({ data }) {
   const [selectState, setSelectState] = React.useState('spring2019');
 
-  const quarters = { spring2019: 'Spring 2019', winter2019: 'Winter 2019' };
+  const quarters = {
+    spring2019: 'Spring 2019',
+    winter2019: 'Winter 2019',
+    fall2019: 'Fall 2019',
+    winter2020: 'Winter 2020',
+  };
 
   return (
     <Layout>

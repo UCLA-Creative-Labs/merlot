@@ -14,7 +14,7 @@ const descriptions = {
 
 const links = {
   1: '',
-  2: 'https://forms.gle/vGWgzdzuYfYWABCEA',
+  2: '',
   3: '',
 };
 
@@ -29,7 +29,7 @@ function ApplyPage(props) {
         </h3>
         <br />
         <br />
-        <h4>Project member apps are now open! Due on Tuesday, January 14 at 8:00 PM.</h4>
+        <h4>Applications are now closed. Project lead applications will open at the end of the quarter.</h4>
       </div>
 
       <div className='positionContainer'>
