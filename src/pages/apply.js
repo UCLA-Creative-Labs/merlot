@@ -13,7 +13,7 @@ const descriptions = {
 };
 
 const links = {
-  1: '',
+  1: 'https://docs.google.com/forms/d/e/1FAIpQLSevIxnkL_NpLG7WfE86ewaHAnat7XlcnxJLg5Wk3N4wPOS7DQ/viewform',
   2: '',
   3: '',
 };
@@ -29,7 +29,9 @@ function ApplyPage(props) {
         </h3>
         <br />
         <br />
-        <h4>Applications are now closed. Project lead applications will open at the end of the quarter.</h4>
+        <h4>
+          Spring Project Lead applications are now open! Project member applications will open Spring Quarter.{' '}
+        </h4>
       </div>
 
       <div className='positionContainer'>
