@@ -20,6 +20,13 @@ function IndexPage(props) {
       <SEO title='Home' keywords={[`creative`, `labs`, `website`, `ucla`, `design`]} />
       <div className='splash_text'>
         <h1>Bring your ideas to life.</h1>
+        <a href='https://www.facebook.com/events/520866362172319/'>
+          <h3 className='marginTop20'>
+            <b>
+              <u>🚨 Winter Demo Day is Friday Week 10 from 6-8PM! Click here to learn more.</u>
+            </b>
+          </h3>
+        </a>
         <h3>
           Creative Labs seeks to empower students through innovation and build community on campus. We bring
           together passionate students from a variety of backgrounds to work on impactful projects and support
