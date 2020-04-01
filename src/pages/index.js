@@ -48,9 +48,25 @@ function IndexPage(props) {
 // export default IndexPage;
 
 export default () => (
-  <div style={{ width: "100vw", height: "100vh", backgroundColor: "white" }}>
-    <div style={{ width: "100vw", height: "100px", position: "absolute", top: 0, bottom: 0, left: 0, right: 0, margin: "auto", "text-align": "center" }}>
-        <h1 style={{ "font-family": ['Comic Sans MS', 'Comic Sans'] }}>out of office! 🥺👉👈<br />friday 4:03.</h1>
+  <div style={{ width: '100vw', height: '100vh', backgroundColor: 'white' }}>
+    <div
+      style={{
+        width: '100vw',
+        height: '100px',
+        position: 'absolute',
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0,
+        margin: 'auto',
+        'text-align': 'center',
+      }}
+    >
+      <h1 style={{ 'font-family': ['Comic Sans MS', 'Comic Sans', 'Comic Neue', 'sans serif'] }}>
+        out of office! 🥺👉👈
+        <br />
+        friday 4:03.
+      </h1>
     </div>
   </div>
-)
+);
