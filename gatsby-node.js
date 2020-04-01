@@ -29,6 +29,7 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors;
     }
 
+    /*
     // Create Project pages
     const projectTemplate = path.resolve(`./src/templates/project.js`);
     // We want to create a detailed page for each
@@ -50,5 +51,6 @@ exports.createPages = ({ graphql, actions }) => {
         },
       });
     });
+    */
   });
 };

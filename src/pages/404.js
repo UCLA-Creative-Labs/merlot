@@ -2,6 +2,8 @@ import React from 'react';
 
 import Layout from '../components/monads/layout';
 import SEO from '../components/monads/seo';
+import { useEffect } from 'react';
+import { navigate } from 'gatsby';
 
 const NotFoundPage = () => (
   <Layout>
@@ -11,4 +13,12 @@ const NotFoundPage = () => (
   </Layout>
 );
 
-export default NotFoundPage;
+// export default NotFoundPage;
+
+export default () => {
+  useEffect(() => {
+    navigate('/');
+  }, []);
+
+  return null;
+}
