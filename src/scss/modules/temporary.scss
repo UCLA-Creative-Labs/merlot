@@ -1,0 +1,72 @@
+// Contains styles for the temporary website, which mainly consist
+//  of changing fonts to Comic Sans and maintaining a white background
+@import 'defaults';
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue');
+
+$font-temp: 'Comic Sans MS', 'Comic Sans', 'Comic Neue';
+
+body {
+  background: $white;
+  color: $black;
+  font-family: $font-temp, sans-serif;
+}
+
+#logoType {
+  font-family: $font-temp, sans-serif;
+}
+
+pre {
+  font-family: $font-temp, sans-serif;
+}
+
+h1 pre {
+  font-family: $font-temp, sans-serif;
+}
+
+.body1 {
+  font-family: $font-temp, sans-serif;
+  @media screen and (max-width: $break-mobile) {
+    font-family: $font-temp, sans-serif;
+  }
+}
+
+.body2 {
+  font-family: $font-temp, sans-serif;
+}
+h1 {
+  font-family: $font-temp, sans-serif;
+
+  @media screen and (max-width: $break-mobile) {
+    font-size: 33px;
+    line-height: 61px;
+  }
+}
+
+h2 {
+  font-family: $font-temp, sans-serif;
+}
+
+h3 {
+  font-family: $font-temp, sans-serif;
+
+  @media screen and (max-width: $break-mobile) {
+    font-family: $font-temp, sans-serif;
+  }
+}
+
+p {
+  font-family: $font-temp, monospace;
+}
+
+.subtitle {
+  font-family: $font-temp, monospace;
+}
+
+.subtitle .orange {
+  color: $secondary;
+}
+
+.header {
+  background: $white;
+  color: $black;
+}
