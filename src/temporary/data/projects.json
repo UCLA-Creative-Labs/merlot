@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Creative Labs Project",
+        "leads": [ "Joe Bruin", "Josie Bruin" ],
+        "about": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet",
+        "positions": [
+            "Programmer", "Artist", "Designer"
+        ],
+        "application": "http://127.0.0.1:8000"
+    },
+    {
+        "name": "Test",
+        "leads": [ "Bob", "Joe" ],
+        "about": "asfd",
+        "positions": [
+            "asd", "asd", "djf"
+        ],
+        "application": "http://127.0.0.1:8000"
+    }
+]

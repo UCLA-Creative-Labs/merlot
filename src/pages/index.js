@@ -52,7 +52,7 @@ export default () => (
     <div
       style={{
         width: '100vw',
-        height: '100px',
+        height: '500px',
         position: 'absolute',
         top: 0,
         bottom: 0,
