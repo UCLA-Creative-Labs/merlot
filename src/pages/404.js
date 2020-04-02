@@ -7,7 +7,7 @@ import SEO from '../components/monads/seo';
 export default () => {
   useEffect(() => {
     navigate('/');
-  }, [])
+  }, []);
 
   return null;
 };
