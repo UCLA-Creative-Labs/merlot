@@ -12,11 +12,11 @@
     {
         "name": "Gwaja Fight",
         "leads": [ "Jeanie Kwon", "Joyce Kang" ],
-        "about": "Gwaja Fight ('Gwaja' meaning 'chips' in Korean) centers around the experience many siblings have of fighting over food. As mom brings home a bag of snacks, the objective is to grab as many as possible when she isn't looking while also stealing your siblings' chips. The game will adopt Asian visual elements–childhood snacks or candies–and beginners are welcome!",
+        "about": "Gwaja Fight ('Gwaja' means 'chips' in Korean) centers siblings fighting over food. As mom brings home a bag of snacks, the objective is to grab as many as possible when she isn't looking while also stealing your siblings' chips.",
         "positions": [
-            "gtfo", "asd", "djf"
+            "2-4 members", " 1 w/ experience with digital art/animation", "1 w/ experience in C#"
         ],
-        "application": "http://127.0.0.1:8000",
+        "application": "https://forms.gle/C275gugRpRDbVxQN9",
         "img": "gwaja.gif"
     },
     {
@@ -26,38 +26,38 @@
         "positions": [
             "2 devs (frontend and backend)", "UI/UX designers", "marketing and business outreach"
         ],
-        "application": "http://127.0.0.1:8000",
+        "application": "https://forms.gle/C275gugRpRDbVxQN9",
         "img": "dancing.gif"
     },
     {
-        "name": "Marketing Project",
+        "name": "Marketing is Fun!",
         "leads": [ "Arjun", "Bryan" ],
-        "about": "Wow, Congrats! You found our test page!",
+        "about": "Interested in learning marketing and company branding? We will create a mock-up company and focus on developing its brand & full marketing campaign. Based on our research and focus, we will design the company’s brand, messaging, and advertisements. It will be fun :D",
         "positions": [
-            "gtfo", "asd", "djf"
+            "2 graphic designers and/or video editors", "2 people interested in marketing"
         ],
-        "application": "http://127.0.0.1:8000",
+        "application": "https://forms.gle/C275gugRpRDbVxQN9",
         "img": "marketing.gif"
     },
     {
-        "name": "Spotify Randomizer Tool",
-        "leads": [ "Arjun", "Bryan" ],
-        "about": "Wow, Congrats! You found our test page!",
+        "name": "spotify.random",
+        "leads": [ "Rasha Rahman", "Carolyn Vo" ],
+        "about": "Many of us are constantly browsing through Spotify's radio or discover weekly to find new music. With Spotify.random, we're aiming to create an app that will generate songs after the user inputs specific settings of how they like a song.",
         "positions": [
-            "gtfo", "asd", "djf"
+            "UI/UX designers", "frontend/backend developers"
         ],
-        "application": "http://127.0.0.1:8000",
-        "img": "dancing.gif"
+        "application": "https://forms.gle/C275gugRpRDbVxQN9",
+        "img": "spotify.random.gif"
     },
     {
         "name": "The Good Fridge",
-        "leads": [ "Arjun", "Bryan" ],
-        "about": "Wow, Congrats! You found our test page!",
+        "leads": [ "Wendy Li" ],
+        "about": "The Good Fridge is your personal guide to all your food ethical dilemmas. Which coffee brand follows Fair Trade principles? Which foods has the least environmental impact? The Good Fridge has the answers.",
         "positions": [
-            "gtfo", "asd", "djf"
+            "frontend developers", "backend developers","UI/UX Designer", "Data Analyst"
         ],
-        "application": "http://127.0.0.1:8000",
-        "img": "dancing.gif"
+        "application": "https://forms.gle/C275gugRpRDbVxQN9",
+        "img": "goodfridge.gif"
     },
     {
         "name": "Alone Together",
@@ -66,7 +66,7 @@
         "positions": [
             "illustrators", "3d modelers", "peeps w/ javascript/webgl experience", "storyteller"
         ],
-        "application": "http://127.0.0.1:8000",
+        "application": "https://forms.gle/C275gugRpRDbVxQN9",
         "img": "dancing.gif"
     }
 ]

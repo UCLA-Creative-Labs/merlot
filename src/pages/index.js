@@ -55,7 +55,7 @@ function Home() {
       <div
         style={{
           width: '100vw',
-          height: '600px',
+          height: '85%',
           position: 'absolute',
           top: 0,
           bottom: 0,
@@ -69,7 +69,7 @@ function Home() {
           we're back!
           <br />
           apply to our projects{' '}
-          <a href='https://www.creativelabsucla.com/'>
+          <a href='https://forms.gle/C275gugRpRDbVxQN9'>
             <u>here</u>
           </a>
         </h3>
