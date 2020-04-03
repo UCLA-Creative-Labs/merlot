@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import SEO from '~/src/components/monads/seo';
 
 import '../scss/main.scss';
+import '../scss/modules/temporary.scss';
 
 function ProjectDescription({ data }) {
   const proj = data.allSitePage.edges[0].node.context;
@@ -19,7 +20,7 @@ function ProjectDescription({ data }) {
           bottom: 0,
           left: 0,
           right: 0,
-          paddingTop: '2%',
+          paddingTop: '5%',
           margin: 'auto',
           'text-align': 'center',
         }}
@@ -31,8 +32,12 @@ function ProjectDescription({ data }) {
         <h3>
           <Link to='/'>return to home</Link>
         </h3>
-        <br />
-        <h1>{proj.name}</h1>
+        <div
+          style = {{ 
+            paddingTop: '5%',
+            paddingBottom: '2%'
+          }} >
+        <h1 className='bouns'>{proj.name}</h1>
         <h3> leads </h3>
         <p>{proj.leads.join(', ')}</p>
         <h3> what </h3>
@@ -43,7 +48,7 @@ function ProjectDescription({ data }) {
             <li>{need}</li>
           ))}
         </ul>
-        <br />
+        </div>
         <h3>
           <a href={proj.application}>apply here</a>
         </h3>
