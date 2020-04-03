@@ -80,7 +80,9 @@ img {
   margin-right: 5%;
   width: 20%;
   @media screen and (max-width: $break-mobile) {
-    width: 90%;
-    margin: 1.5% !important;
+    width: 85%;
+    margin: 2.5% !important;
+    margin-top: 5% !important;
+    margin-bottom: 5% !important;
   }
 }

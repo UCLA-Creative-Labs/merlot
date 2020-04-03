@@ -20,14 +20,14 @@
         "img": "gwaja.gif"
     },
     {
-        "name": "Charipay: Project Valor",
-        "leads": [ "Kyler Gilbert" ],
-        "about": "  Charipay, is a convenience-focused donation platform that connects users to causes and charities. Given the current COVID-19 pandemic, we have decided to create a new web/mobile app solely for providing medical equipment to hospitals in need.",
+        "name": "The Good Fridge",
+        "leads": [ "Wendy Li" ],
+        "about": "The Good Fridge is your personal guide to all your food ethical dilemmas. Which coffee brand follows Fair Trade principles? Which foods has the least environmental impact? The Good Fridge has the answers.",
         "positions": [
-            "2 devs (frontend and backend)", "UI/UX designers", "marketing and business outreach"
+            "frontend developers", "backend developers","UI/UX Designer", "Data Analyst"
         ],
         "application": "https://forms.gle/C275gugRpRDbVxQN9",
-        "img": "dancing.gif"
+        "img": "goodfridge.gif"
     },
     {
         "name": "Marketing is Fun!",
@@ -50,16 +50,6 @@
         "img": "spotify.random.gif"
     },
     {
-        "name": "The Good Fridge",
-        "leads": [ "Wendy Li" ],
-        "about": "The Good Fridge is your personal guide to all your food ethical dilemmas. Which coffee brand follows Fair Trade principles? Which foods has the least environmental impact? The Good Fridge has the answers.",
-        "positions": [
-            "frontend developers", "backend developers","UI/UX Designer", "Data Analyst"
-        ],
-        "application": "https://forms.gle/C275gugRpRDbVxQN9",
-        "img": "goodfridge.gif"
-    },
-    {
         "name": "Alone Together",
         "leads": [ "Rishabh Aggarwal", "Rosalind Chang" ],
         "about": "An interactive digital experience using illustration/3D models and user generated content that addresses isolation in this time but highlights the inherent togetherness. (Run by CL Alums)",
@@ -67,6 +57,16 @@
             "illustrators", "3d modelers", "peeps w/ javascript/webgl experience", "storyteller"
         ],
         "application": "https://forms.gle/C275gugRpRDbVxQN9",
-        "img": "dancing.gif"
+        "img": "alonetogether.gif"
+    },
+    {
+        "name": "Charipay: Project Valor",
+        "leads": [ "Kyler Gilbert" ],
+        "about": "  Charipay, is a convenience-focused donation platform that connects users to causes and charities. Given the current COVID-19 pandemic, we have decided to create a new web/mobile app solely for providing medical equipment to hospitals in need.",
+        "positions": [
+            "2 devs (frontend and backend)", "UI/UX designers", "marketing and business outreach"
+        ],
+        "application": "https://forms.gle/C275gugRpRDbVxQN9",
+        "img": "charipay.gif"
     }
 ]
