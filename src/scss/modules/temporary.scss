@@ -6,7 +6,7 @@
 $font-temp: 'Comic Sans MS', 'Comic Sans', 'Comic Neue';
 
 body {
-  background: $white;
+  background: white;
   color: $black;
   font-family: $font-temp, sans-serif;
 }
@@ -25,12 +25,23 @@ h1 {
   margin-bottom: 30px;
 }
 
+h3 {
+  font-weight: bold;
+}
+
 p, ul {
   font-size: 18px;
   display: inline-block;
   clear: both;
   text-align: left;
-  max-width: 40%;
+  max-width: 20%;
+  @media screen and (max-width: $break-mobile) {
+    max-width: 80%;
+  }
+}
+
+a {
+  text-decoration: underline;
 }
 
 .body1 {
@@ -50,6 +61,7 @@ h1 {
 h3 {
   @media screen and (max-width: $break-mobile) {
     font-family: $font-temp, sans-serif;
+    font-size: 24px !important;
   }
 }
 .subtitle .orange {

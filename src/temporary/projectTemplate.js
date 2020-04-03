@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import Layout from '~/src/components/monads/layout';
 import SEO from '~/src/components/monads/seo';
 
 import '../scss/main.scss';
@@ -10,16 +9,16 @@ function ProjectDescription({ data }) {
   const proj = data.allSitePage.edges[0].node.context;
 
   return (
-    <div style={{ width: '100vw', height: '100vh', backgroundColor: 'white' }}>
+    <div style={{ width: '100vw', height: '100vh' }}>
       <div
         style={{
           width: 'auto',
-          height: '600px',
           position: 'absolute',
           top: 0,
           bottom: 0,
           left: 0,
           right: 0,
+          paddingTop: '5%',
           margin: 'auto',
           'text-align': 'center',
         }}
@@ -28,25 +27,25 @@ function ProjectDescription({ data }) {
           title={proj.name}
           keywords={[`creative`, `labs`, `website`, `ucla`, `design`, `projects`, proj.name]}
         />
+        <h3>
+          <Link to='/'>return to home</Link>
+        </h3>
+        <br />
         <h1>{proj.name}</h1>
-        <h3>
-          <b>leads</b>
-        </h3>
+        <h3> leads </h3>
         <p>{proj.leads.join(', ')}</p>
-        <h3>
-          <b>what</b>
-        </h3>
+        <h3> what </h3>
         <p>{proj.about}</p>
-        <h3>
-          <b>need</b>
-        </h3>
+        <h3> need </h3>
         <ul>
           {proj.positions.map(need => (
             <li>{need}</li>
           ))}
         </ul>
         <br />
-        <p>apply here</p>
+        <h3>
+          <a href={proj.application}>apply here</a>
+        </h3>
       </div>
     </div>
   );
@@ -64,6 +63,7 @@ export const query = graphql`
             leads
             about
             positions
+            application
           }
         }
       }

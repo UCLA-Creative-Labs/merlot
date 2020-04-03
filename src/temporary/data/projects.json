@@ -1,10 +1,10 @@
 [
     {
         "name": "Creative Labs Project",
-        "leads": [ "Joe Bruin", "Josie Bruin" ],
-        "about": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet",
+        "leads": [ "lead 1", "lead 2" ],
+        "about": "short caption about what the project is if it is long please left align the text and then center align the entire paragraph",
         "positions": [
-            "Programmer", "Artist", "Designer"
+            "developer", "designer", "idk something else"
         ],
         "application": "http://127.0.0.1:8000"
     },
