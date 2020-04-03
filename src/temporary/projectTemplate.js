@@ -33,21 +33,22 @@ function ProjectDescription({ data }) {
           <Link to='/'>return to home</Link>
         </h3>
         <div
-          style = {{ 
+          style={{
             paddingTop: '5%',
-            paddingBottom: '2%'
-          }} >
-        <h1 className='bouns'>{proj.name}</h1>
-        <h3> leads </h3>
-        <p>{proj.leads.join(', ')}</p>
-        <h3> what </h3>
-        <p style={{textAlign: 'center'}}>{proj.about}</p>
-        <h3> need </h3>
-        <ul>
-          {proj.positions.map(need => (
-            <li>{need}</li>
-          ))}
-        </ul>
+            paddingBottom: '2%',
+          }}
+        >
+          <h1 className='bouns'>{proj.name}</h1>
+          <h3> leads </h3>
+          <p>{proj.leads.join(', ')}</p>
+          <h3> what </h3>
+          <p style={{ textAlign: 'center' }}>{proj.about}</p>
+          <h3> need </h3>
+          <ul>
+            {proj.positions.map(need => (
+              <li>{need}</li>
+            ))}
+          </ul>
         </div>
         <h3>
           <a href={proj.application}>apply here</a>
