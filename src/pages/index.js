@@ -58,7 +58,7 @@ function Home() {
     <div
       style={{
         width: '100vw',
-        height: '500px',
+        height: '600px',
         position: 'absolute',
         top: 0,
         bottom: 0,
@@ -75,16 +75,20 @@ function Home() {
       </h1>
       <div
         style = {{
-          marginTop: '32px',
+          marginTop: '50px',
           display: 'table',
           horizontalAlign: 'center',
         }}
       >
-        {data.stuff.map(proj => ( 
-          <a>
-            <img src={proj.img}></img>
-          </a>
-        ))} 
+        {data.stuff.map(proj => {
+          if(proj.name != "test"){
+            let link = "/projects/" + proj.name;
+            return (
+            <a href={link} >
+              <img src={proj.img}></img>
+            </a>
+          );
+          }})} 
       </div>
     </div>
   </div>

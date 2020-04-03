@@ -7,16 +7,66 @@
             "gtfo", "asd", "djf"
         ],
         "application": "http://127.0.0.1:8000",
-        "img": "'~/src/images/alumni.jpg'"
+        "img": "alumni.jpg"
     },
     {
-        "name": "test2",
+        "name": "Gwaja Fight",
         "leads": [ "Arjun", "Bryan" ],
         "about": "Wow, Congrats! You found our test page!",
         "positions": [
             "gtfo", "asd", "djf"
         ],
         "application": "http://127.0.0.1:8000",
-        "img": "'~/src/images/alumni.jpg'"
+        "img": "alumni.jpg"
+    },
+    {
+        "name": "Charipay",
+        "leads": [ "Arjun", "Bryan" ],
+        "about": "Wow, Congrats! You found our test page!",
+        "positions": [
+            "gtfo", "asd", "djf"
+        ],
+        "application": "http://127.0.0.1:8000",
+        "img": "alumni.jpg"
+    },
+    {
+        "name": "Marketing",
+        "leads": [ "Arjun", "Bryan" ],
+        "about": "Wow, Congrats! You found our test page!",
+        "positions": [
+            "gtfo", "asd", "djf"
+        ],
+        "application": "http://127.0.0.1:8000",
+        "img": "alumni.jpg"
+    },
+    {
+        "name": "Spotify Randomizer",
+        "leads": [ "Arjun", "Bryan" ],
+        "about": "Wow, Congrats! You found our test page!",
+        "positions": [
+            "gtfo", "asd", "djf"
+        ],
+        "application": "http://127.0.0.1:8000",
+        "img": "alumni.jpg"
+    },
+    {
+        "name": "Good Fridge",
+        "leads": [ "Arjun", "Bryan" ],
+        "about": "Wow, Congrats! You found our test page!",
+        "positions": [
+            "gtfo", "asd", "djf"
+        ],
+        "application": "http://127.0.0.1:8000",
+        "img": "alumni.jpg"
+    },
+    {
+        "name": "Alumni",
+        "leads": [ "Arjun", "Bryan" ],
+        "about": "Wow, Congrats! You found our test page!",
+        "positions": [
+            "gtfo", "asd", "djf"
+        ],
+        "application": "http://127.0.0.1:8000",
+        "img": "alumni.jpg"
     }
 ]
