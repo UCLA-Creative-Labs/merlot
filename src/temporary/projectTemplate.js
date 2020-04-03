@@ -8,6 +8,7 @@ import '../scss/main.scss';
 
 function ProjectDescription({ data }) {
   const proj = data.allSitePage.edges[0].node.context;
+  console.log(data);
 
   return (
     <div style={{ width: '100vw', height: '100vh', backgroundColor: 'white' }}>

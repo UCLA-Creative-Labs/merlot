@@ -1,20 +1,22 @@
 [
     {
-        "name": "Creative Labs Project",
-        "leads": [ "Joe Bruin", "Josie Bruin" ],
-        "about": "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet",
+        "name": "test",
+        "leads": [ "Arjun", "Bryan" ],
+        "about": "Wow, Congrats! You found our test page!",
         "positions": [
-            "Programmer", "Artist", "Designer"
+            "gtfo", "asd", "djf"
         ],
-        "application": "http://127.0.0.1:8000"
+        "application": "http://127.0.0.1:8000",
+        "img": "'~/src/images/alumni.jpg'"
     },
     {
-        "name": "Test",
-        "leads": [ "Bob", "Joe" ],
-        "about": "asfd",
+        "name": "test2",
+        "leads": [ "Arjun", "Bryan" ],
+        "about": "Wow, Congrats! You found our test page!",
         "positions": [
-            "asd", "asd", "djf"
+            "gtfo", "asd", "djf"
         ],
-        "application": "http://127.0.0.1:8000"
+        "application": "http://127.0.0.1:8000",
+        "img": "'~/src/images/alumni.jpg'"
     }
 ]

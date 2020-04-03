@@ -4,6 +4,8 @@ import { Link } from 'gatsby';
 import Layout from '~/src/components/monads/layout';
 import SEO from '~/src/components/monads/seo';
 
+import stuff from '~/src/temporary/data/projects.json';
+import alumn from '~/src/images/alumni.jpg';
 import DescriptionComponent from '~/src/components/DescriptionComponent.js';
 import '../scss/main.scss';
 const descriptions = {
@@ -47,8 +49,12 @@ function IndexPage(props) {
 
 // export default IndexPage;
 
-export default () => (
-  <div style={{ width: '100vw', height: '100vh', backgroundColor: 'white' }}>
+function Home() {
+  const data = {stuff};
+  console.log(data);
+  console.log(data.stuff[0]);
+  return (
+    <div style={{ width: '100vw', height: '100vh', backgroundColor: 'white' }}>
     <div
       style={{
         width: '100vw',
@@ -63,10 +69,26 @@ export default () => (
       }}
     >
       <h1>
-        out of office! 🥺👉👈
+        we're back!
         <br />
-        friday 4:03.
+        apply to our projects <a href="https://www.creativelabsucla.com/"><u>here</u></a>
       </h1>
+      <div
+        style = {{
+          marginTop: '32px',
+          display: 'table',
+          horizontalAlign: 'center',
+        }}
+      >
+        {data.stuff.map(proj => ( 
+          <a>
+            <img src={proj.img}></img>
+          </a>
+        ))} 
+      </div>
     </div>
   </div>
-);
+  );
+}
+
+export default Home;
