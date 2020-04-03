@@ -1,72 +1,86 @@
 [
     {
         "name": "4:03",
+        "id": "403",
         "leads": [ "Arjun", "Bryan" ],
         "about": "Wow, Congrats! You found our test page!",
         "positions": [
             "gtfo", "we dont like you", "leave"
         ],
         "application": "http://127.0.0.1:8000",
+        "alt": "dancing.gif",
         "img": "dancing.gif"
     },
     {
         "name": "Gwaja Fight",
+        "id": "gwaja",
         "leads": [ "Jeanie Kwon", "Joyce Kang" ],
         "about": "Gwaja Fight ('Gwaja' means 'chips' in Korean) centers siblings fighting over food. As mom brings home a bag of snacks, the objective is to grab as many as possible when she isn't looking while also stealing your siblings' chips.",
         "positions": [
             "2-4 members", " 1 w/ experience with digital art/animation", "1 w/ experience in C#"
         ],
         "application": "https://forms.gle/C275gugRpRDbVxQN9",
-        "img": "gwaja.gif"
+        "alt": "gwaja.gif",
+        "img": "dancing.gif"
     },
     {
         "name": "The Good Fridge",
+        "id": "goodfridge",
         "leads": [ "Wendy Li" ],
         "about": "The Good Fridge is your personal guide to all your food ethical dilemmas. Which coffee brand follows Fair Trade principles? Which foods has the least environmental impact? The Good Fridge has the answers.",
         "positions": [
             "frontend developers", "backend developers","UI/UX Designer", "Data Analyst"
         ],
         "application": "https://forms.gle/C275gugRpRDbVxQN9",
-        "img": "goodfridge.gif"
+        "alt": "goodfridge.gif",
+        "img": "dancing.gif"
     },
     {
         "name": "Marketing is Fun!",
+        "id": "marketing",
         "leads": [ "Arjun", "Bryan" ],
         "about": "Interested in learning marketing and company branding? We will create a mock-up company and focus on developing its brand & full marketing campaign. Based on our research and focus, we will design the company’s brand, messaging, and advertisements. It will be fun :D",
         "positions": [
             "2 graphic designers and/or video editors", "2 people interested in marketing"
         ],
         "application": "https://forms.gle/C275gugRpRDbVxQN9",
-        "img": "marketing.gif"
+        "alt": "marketing.gif",
+        "img": "dancing.gif"
     },
     {
         "name": "spotify.random",
+        "id": "spotify",
         "leads": [ "Rasha Rahman", "Carolyn Vo" ],
         "about": "Many of us are constantly browsing through Spotify's radio or discover weekly to find new music. With Spotify.random, we're aiming to create an app that will generate songs after the user inputs specific settings of how they like a song.",
         "positions": [
             "UI/UX designers", "frontend/backend developers"
         ],
         "application": "https://forms.gle/C275gugRpRDbVxQN9",
-        "img": "spotify.random.gif"
+        "alt": "spotify.random.gif",
+        "img": "dancing.gif"
     },
     {
         "name": "Alone Together",
+        "id": "alone",
         "leads": [ "Rishabh Aggarwal", "Rosalind Chang" ],
         "about": "An interactive digital experience using illustration/3D models and user generated content that addresses isolation in this time but highlights the inherent togetherness. (Run by CL Alums)",
         "positions": [
             "illustrators", "3d modelers", "peeps w/ javascript/webgl experience", "storyteller"
         ],
         "application": "https://forms.gle/C275gugRpRDbVxQN9",
-        "img": "alonetogether.gif"
+        "alt": "alonetogether.gif",
+        "img": "dancing.gif"
     },
     {
         "name": "Charipay: Project Valor",
+        "id": "charipay",
         "leads": [ "Kyler Gilbert" ],
         "about": "  Charipay, is a convenience-focused donation platform that connects users to causes and charities. Given the current COVID-19 pandemic, we have decided to create a new web/mobile app solely for providing medical equipment to hospitals in need.",
         "positions": [
             "2 devs (frontend and backend)", "UI/UX designers", "marketing and business outreach"
         ],
         "application": "https://forms.gle/C275gugRpRDbVxQN9",
-        "img": "charipay.gif"
+        "alt": "charipay.gif",
+        "img": "dancing.gif"
     }
 ]

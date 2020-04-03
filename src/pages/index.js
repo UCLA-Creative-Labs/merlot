@@ -80,13 +80,23 @@ function Home() {
             horizontalAlign: 'center',
           }}
         >
-          {a.data.map(proj => {
+          {a.data.map((proj, index) => {
             if (proj.name != '4:03') {
-              let link = '/projects/' + proj.name;
+              let link = '/projects/' + proj.id;
+              const img =
+                <img
+                  src={proj.img}
+                  onMouseOver={e => (e.currentTarget.src = proj.alt)}
+                  onMouseOut={e => (e.currentTarget.src = proj.img)}
+                />
+
               return (
-                <a href={link}>
-                  <img src={proj.img}></img>
+                <>
+                <a id={proj.id} href={link}>
+                  {img}
                 </a>
+                {index % 3 == 0 ? <br /> : null}
+                </>
               );
             }
           })}

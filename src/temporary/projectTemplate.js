@@ -67,6 +67,7 @@ export const query = graphql`
         node {
           context {
             name
+            id
             leads
             about
             positions
