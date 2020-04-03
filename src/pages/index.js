@@ -83,19 +83,20 @@ function Home() {
           {a.data.map((proj, index) => {
             if (proj.name != '4:03') {
               let link = '/projects/' + proj.id;
-              const img =
+              const img = (
                 <img
                   src={proj.img}
                   onMouseOver={e => (e.currentTarget.src = proj.alt)}
                   onMouseOut={e => (e.currentTarget.src = proj.img)}
                 />
+              );
 
               return (
                 <>
-                <a id={proj.id} href={link}>
-                  {img}
-                </a>
-                {index % 3 == 0 ? <br /> : null}
+                  <a id={proj.id} href={link}>
+                    {img}
+                  </a>
+                  {index % 3 == 0 ? <br /> : null}
                 </>
               );
             }
