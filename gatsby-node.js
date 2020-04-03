@@ -20,4 +20,11 @@ exports.createPages = ({ actions }) => {
       context: proj
     });
   });
+
+  const eggTemplate = path.resolve('./src/temporary/eggTemplate.js')
+  createPage({
+    path:'/eggs',
+    component: eggTemplate,
+    context: {}
+  })
 };
