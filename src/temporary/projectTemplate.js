@@ -10,6 +10,7 @@ function Meme(proj) {
   return (
     <div style={{ width: '100vw', height: '100vh' }}>
       <div
+        class='meme'
         style={{
           width: 'auto',
           position: 'absolute',
@@ -19,7 +20,7 @@ function Meme(proj) {
           right: 0,
           paddingTop: '5%',
           margin: 'auto',
-          'text-align': 'center',
+          textAlign: 'center',
         }}
       >
         <SEO
