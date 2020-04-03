@@ -60,18 +60,6 @@
         "img": "static_spotify.png"
     },
     {
-        "name": "Alone Together",
-        "id": "alone",
-        "leads": [ "Rishabh Aggarwal", "Rosalind Chang" ],
-        "about": "An interactive digital experience using illustration/3D models and user generated content that addresses isolation in this time but highlights the inherent togetherness. (Run by CL Alums)",
-        "positions": [
-            "illustrators", "3d modelers", "peeps w/ javascript/webgl experience", "storyteller"
-        ],
-        "application": "https://forms.gle/C275gugRpRDbVxQN9",
-        "alt": "alonetogether.gif",
-        "img": "static_alone.png"
-    },
-    {
         "name": "Charipay: Project Valor",
         "id": "charipay",
         "leads": [ "Kyler Gilbert" ],
@@ -82,5 +70,18 @@
         "application": "https://forms.gle/C275gugRpRDbVxQN9",
         "alt": "charipay.gif",
         "img": "static_charipay.png"
+    },
+    {
+        "name": "Alone Together",
+        "id": "alone",
+        "leads": [ "Rishabh Aggarwal", "Rosalind Chang" ],
+        "about": "An interactive digital experience using illustration/3D models and user generated content that addresses isolation in this time but highlights the inherent togetherness. (Run by CL Alums)",
+        "positions": [
+            "illustrators", "3d modelers", "peeps w/ javascript/webgl experience", "storyteller"
+        ],
+        "application": "https://forms.gle/C275gugRpRDbVxQN9",
+        "alt": "alonetogether.gif",
+        "img": "static_alone.png"
     }
+    
 ]

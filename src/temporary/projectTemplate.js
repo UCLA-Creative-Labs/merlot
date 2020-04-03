@@ -6,8 +6,7 @@ import SEO from '~/src/components/monads/seo';
 import '../scss/main.scss';
 import '../scss/modules/temporary.scss';
 
-
-function Meme(proj){
+function Meme(proj) {
   return (
     <div style={{ width: '100vw', height: '100vh' }}>
       <div
@@ -58,8 +57,8 @@ function Meme(proj){
 
 function ProjectDescription({ data }) {
   const proj = data.allSitePage.edges[0].node.context;
-  console.log(proj.id)
-  if(proj.id == "4:03"){
+  console.log(proj.id);
+  if (proj.id == '4:03') {
     return Meme(proj);
   }
   return (
