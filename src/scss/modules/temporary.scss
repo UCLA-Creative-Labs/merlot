@@ -79,6 +79,7 @@ img {
   margin-left: 1%;
   margin-right: 1%;
   width: 15%;
+  box-shadow: 5px 5px 10px rgba(50, 50, 50, 0.3);
   @media screen and (max-width: $break-mobile) {
     width: 85%;
     margin: 2.5% !important;

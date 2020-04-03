@@ -1,7 +1,7 @@
 [
     {
         "name": "4:03",
-        "id": "403",
+        "id": "4:03",
         "leads": [ "Arjun", "Bryan" ],
         "about": "Wow, Congrats! You found our test page!",
         "positions": [
@@ -21,7 +21,7 @@
         ],
         "application": "https://forms.gle/C275gugRpRDbVxQN9",
         "alt": "gwaja.gif",
-        "img": "dancing.gif"
+        "img": "static_gwaja.png"
     },
     {
         "name": "The Good Fridge",
@@ -33,7 +33,7 @@
         ],
         "application": "https://forms.gle/C275gugRpRDbVxQN9",
         "alt": "goodfridge.gif",
-        "img": "dancing.gif"
+        "img": "static_goodfridge.png"
     },
     {
         "name": "Marketing is Fun!",
@@ -45,7 +45,7 @@
         ],
         "application": "https://forms.gle/C275gugRpRDbVxQN9",
         "alt": "marketing.gif",
-        "img": "dancing.gif"
+        "img": "static_marketing.png"
     },
     {
         "name": "spotify.random",
@@ -57,7 +57,7 @@
         ],
         "application": "https://forms.gle/C275gugRpRDbVxQN9",
         "alt": "spotify.random.gif",
-        "img": "dancing.gif"
+        "img": "static_spotify.png"
     },
     {
         "name": "Alone Together",
@@ -69,7 +69,7 @@
         ],
         "application": "https://forms.gle/C275gugRpRDbVxQN9",
         "alt": "alonetogether.gif",
-        "img": "dancing.gif"
+        "img": "static_alone.png"
     },
     {
         "name": "Charipay: Project Valor",
@@ -81,6 +81,6 @@
         ],
         "application": "https://forms.gle/C275gugRpRDbVxQN9",
         "alt": "charipay.gif",
-        "img": "dancing.gif"
+        "img": "static_charipay.png"
     }
 ]
