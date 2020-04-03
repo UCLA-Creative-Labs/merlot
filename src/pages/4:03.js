@@ -1,28 +1,18 @@
-import React, { useEffect } from 'react';
-import { Link, navigate } from 'gatsby';
+import React from 'react';
+import { Link } from 'gatsby';
 
 import SEO from '~/src/components/monads/seo';
 
 import '../scss/main.scss';
 import '../scss/modules/temporary.scss';
 
-function Meme(proj) {
-  useEffect(() => {
-    navigate('/');
-  }, []);
+const proj = require('../temporary/data/projects.json')[0];
 
-  return null;
-}
-
-function ProjectDescription({ data }) {
-  const proj = data.allSitePage.edges[0].node.context;
-  console.log(proj.id);
-  if (proj.id == '4:03') {
-    return Meme(proj);
-  }
+function Meme() {
   return (
     <div style={{ width: '100vw', height: '100vh' }}>
       <div
+        class='meme'
         style={{
           width: 'auto',
           position: 'absolute',
@@ -32,7 +22,7 @@ function ProjectDescription({ data }) {
           right: 0,
           paddingTop: '5%',
           margin: 'auto',
-          'text-align': 'center',
+          textAlign: 'center',
         }}
       >
         <SEO
@@ -49,7 +39,7 @@ function ProjectDescription({ data }) {
           }}
         >
           <h1 className='bouns'>{proj.name}</h1>
-          <h3> leads </h3>
+          <h3> who </h3>
           <p>{proj.leads.join(', ')}</p>
           <h3> what </h3>
           <p style={{ textAlign: 'center' }}>{proj.about}</p>
@@ -68,23 +58,4 @@ function ProjectDescription({ data }) {
   );
 }
 
-export default ProjectDescription;
-
-export const query = graphql`
-  query($path: String!) {
-    allSitePage(filter: { path: { eq: $path } }) {
-      edges {
-        node {
-          context {
-            name
-            id
-            leads
-            about
-            positions
-            application
-          }
-        }
-      }
-    }
-  }
-`;
+export default Meme;
