@@ -74,13 +74,16 @@ h3 {
 }
 
 img {
-  margin-top: .5%;
-  margin-bottom: .5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  width: 20%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 15%;
+  box-shadow: 5px 5px 10px rgba(50, 50, 50, 0.3);
   @media screen and (max-width: $break-mobile) {
-    width: 90%;
-    margin: 1.5% !important;
+    width: 85%;
+    margin: 2.5% !important;
+    margin-top: 5% !important;
+    margin-bottom: 5% !important;
   }
 }
