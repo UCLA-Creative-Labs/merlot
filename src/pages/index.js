@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import Layout from '~/src/components/monads/layout';
 import SEO from '~/src/components/monads/seo';
 
+import data from '~/src/temporary/data/projects.json';
 import DescriptionComponent from '~/src/components/DescriptionComponent.js';
 import '../scss/main.scss';
 const descriptions = {
@@ -47,10 +48,63 @@ function IndexPage(props) {
 
 // export default IndexPage;
 
-export default () => (
-  <div style={{ width: "100vw", height: "100vh", backgroundColor: "white" }}>
-    <div style={{ width: "100vw", height: "100px", position: "absolute", top: 0, bottom: 0, left: 0, right: 0, margin: "auto", "text-align": "center" }}>
-        <h1 style={{ "font-family": ['Comic Sans MS', 'Comic Sans'] }}>out of office! 🥺👉👈<br />friday 4:03.</h1>
+function Home() {
+  const a = { data };
+  return (
+    <div style={{ width: '100vw', height: '100vh', backgroundColor: 'white' }}>
+      <div
+        style={{
+          width: '100vw',
+          height: '85%',
+          position: 'absolute',
+          top: 0,
+          bottom: 0,
+          left: 0,
+          right: 0,
+          margin: 'auto',
+          'text-align': 'center',
+        }}
+      >
+        <h3>
+          we're back!
+          <br />
+          apply to our projects{' '}
+          <a href='https://forms.gle/C275gugRpRDbVxQN9'>
+            <u>here</u>
+          </a>
+        </h3>
+        <div
+          style={{
+            marginTop: '32px',
+            display: 'table',
+            horizontalAlign: 'center',
+          }}
+        >
+          {a.data.map((proj, index) => {
+            if (proj.name != '4:03') {
+              let link = '/projects/' + proj.id;
+              const img = (
+                <img
+                  src={proj.img}
+                  onMouseOver={e => (e.currentTarget.src = proj.alt)}
+                  onMouseOut={e => (e.currentTarget.src = proj.img)}
+                />
+              );
+
+              return (
+                <>
+                  <a id={proj.id} href={link}>
+                    {img}
+                  </a>
+                  {index % 3 == 0 ? <br /> : null}
+                </>
+              );
+            }
+          })}
+        </div>
+      </div>
     </div>
-  </div>
-)
+  );
+}
+
+export default Home;
