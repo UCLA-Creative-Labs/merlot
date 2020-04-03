@@ -4,8 +4,7 @@ import { Link } from 'gatsby';
 import Layout from '~/src/components/monads/layout';
 import SEO from '~/src/components/monads/seo';
 
-import stuff from '~/src/temporary/data/projects.json';
-import alumn from '~/src/images/alumni.jpg';
+import data from '~/src/temporary/data/projects.json';
 import DescriptionComponent from '~/src/components/DescriptionComponent.js';
 import '../scss/main.scss';
 const descriptions = {
@@ -50,9 +49,7 @@ function IndexPage(props) {
 // export default IndexPage;
 
 function Home() {
-  const data = { stuff };
-  console.log(data);
-  console.log(data.stuff[0]);
+  const a = { data };
   return (
     <div style={{ width: '100vw', height: '100vh', backgroundColor: 'white' }}>
       <div
@@ -83,7 +80,7 @@ function Home() {
             horizontalAlign: 'center',
           }}
         >
-          {data.stuff.map(proj => {
+          {a.data.map(proj => {
             if (proj.name != '4:03') {
               let link = '/projects/' + proj.name;
               return (
