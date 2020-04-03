@@ -1,72 +1,72 @@
 [
     {
-        "name": "test",
+        "name": "4:03",
         "leads": [ "Arjun", "Bryan" ],
         "about": "Wow, Congrats! You found our test page!",
         "positions": [
-            "gtfo", "asd", "djf"
+            "gtfo", "we dont like you", "leave"
         ],
         "application": "http://127.0.0.1:8000",
-        "img": "alumni.jpg"
+        "img": "dancing.gif"
     },
     {
         "name": "Gwaja Fight",
         "leads": [ "Arjun", "Bryan" ],
-        "about": "Wow, Congrats! You found our test page!",
+        "about": "Gwaja Fight ('Gwaja' meaning 'chips' in Korean) centers around the experience many siblings have of fighting over food. As mom brings home a bag of snacks, the objective is to grab as many as possible when she isn't looking while also stealing your siblings' chips. The game will adopt Asian visual elements–childhood snacks or candies–and beginners are welcome!",
         "positions": [
             "gtfo", "asd", "djf"
         ],
         "application": "http://127.0.0.1:8000",
-        "img": "alumni.jpg"
+        "img": "dancing.gif"
     },
     {
-        "name": "Charipay",
+        "name": "Charipay: Project Valor",
+        "leads": [ "Kyler Gilbert" ],
+        "about": "  Charipay, is a convenience-focused donation platform that connects users to causes and charities. Given the current COVID-19 pandemic, we have decided to create a new web/mobile app solely for providing medical equipment to hospitals in need.",
+        "positions": [
+            "2 devs (frontend and backend)", "UI/UX designers", "marketing and business outreach"
+        ],
+        "application": "http://127.0.0.1:8000",
+        "img": "dancing.gif"
+    },
+    {
+        "name": "Marketing Project",
         "leads": [ "Arjun", "Bryan" ],
         "about": "Wow, Congrats! You found our test page!",
         "positions": [
             "gtfo", "asd", "djf"
         ],
         "application": "http://127.0.0.1:8000",
-        "img": "alumni.jpg"
+        "img": "dancing.gif"
     },
     {
-        "name": "Marketing",
+        "name": "Spotify Randomizer Tool",
         "leads": [ "Arjun", "Bryan" ],
         "about": "Wow, Congrats! You found our test page!",
         "positions": [
             "gtfo", "asd", "djf"
         ],
         "application": "http://127.0.0.1:8000",
-        "img": "alumni.jpg"
+        "img": "dancing.gif"
     },
     {
-        "name": "Spotify Randomizer",
+        "name": "The Good Fridge",
         "leads": [ "Arjun", "Bryan" ],
         "about": "Wow, Congrats! You found our test page!",
         "positions": [
             "gtfo", "asd", "djf"
         ],
         "application": "http://127.0.0.1:8000",
-        "img": "alumni.jpg"
+        "img": "dancing.gif"
     },
     {
-        "name": "Good Fridge",
-        "leads": [ "Arjun", "Bryan" ],
-        "about": "Wow, Congrats! You found our test page!",
+        "name": "Alone Together",
+        "leads": [ "Rishabh Aggarwal", "Rosalind Chang" ],
+        "about": "An interactive digital experience using illustration/3D models and user generated content that addresses isolation in this time but highlights the inherent togetherness. (Run by CL Alums)",
         "positions": [
-            "gtfo", "asd", "djf"
+            "illustrators", "3d modelers", "peeps w/ javascript/webgl experience", "storyteller"
         ],
         "application": "http://127.0.0.1:8000",
-        "img": "alumni.jpg"
-    },
-    {
-        "name": "Alumni",
-        "leads": [ "Arjun", "Bryan" ],
-        "about": "Wow, Congrats! You found our test page!",
-        "positions": [
-            "gtfo", "asd", "djf"
-        ],
-        "application": "http://127.0.0.1:8000",
-        "img": "alumni.jpg"
+        "img": "dancing.gif"
     }
 ]

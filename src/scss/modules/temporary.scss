@@ -12,7 +12,7 @@ body {
 }
 
 #logoType, pre, h1 pre,
-h1, h2, h3, p, .subtitle, .body2 {
+h1, h2, h3, p, sp.subtitle, .body2 {
   font-family: $font-temp, sans-serif;
   clear: both;
   padding: 0 20px;
@@ -34,7 +34,7 @@ p, ul {
   display: inline-block;
   clear: both;
   text-align: left;
-  max-width: 20%;
+  max-width: 50%;
   @media screen and (max-width: $break-mobile) {
     max-width: 80%;
   }

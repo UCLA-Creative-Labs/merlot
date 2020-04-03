@@ -19,7 +19,7 @@ function ProjectDescription({ data }) {
           bottom: 0,
           left: 0,
           right: 0,
-          paddingTop: '5%',
+          paddingTop: '2%',
           margin: 'auto',
           'text-align': 'center',
         }}
@@ -36,7 +36,7 @@ function ProjectDescription({ data }) {
         <h3> leads </h3>
         <p>{proj.leads.join(', ')}</p>
         <h3> what </h3>
-        <p>{proj.about}</p>
+        <p style={{textAlign: 'center'}}>{proj.about}</p>
         <h3> need </h3>
         <ul>
           {proj.positions.map(need => (

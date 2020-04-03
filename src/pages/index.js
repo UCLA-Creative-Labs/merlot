@@ -84,7 +84,7 @@ function Home() {
           }}
         >
           {data.stuff.map(proj => {
-            if (proj.name != 'test') {
+            if (proj.name != '4:03') {
               let link = '/projects/' + proj.name;
               return (
                 <a href={link}>
