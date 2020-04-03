@@ -15,7 +15,7 @@ exports.createPages = ({ actions }) => {
 
   projects.forEach(proj => {
     createPage({
-      path: `/projects/${proj.name}`,
+      path: `/projects/${proj.id}`,
       component: template,
       context: proj
     });
