@@ -52,6 +52,7 @@ function Home() {
   const a = { data };
   return (
     <div style={{ width: '100vw', height: '100vh', backgroundColor: 'white' }}>
+      <SEO title='Home' keywords={[`creative`, `labs`, `website`, `ucla`, `design`]} />
       <div
         style={{
           width: '100vw',
