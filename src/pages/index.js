@@ -50,48 +50,52 @@ function IndexPage(props) {
 // export default IndexPage;
 
 function Home() {
-  const data = {stuff};
+  const data = { stuff };
   console.log(data);
   console.log(data.stuff[0]);
   return (
     <div style={{ width: '100vw', height: '100vh', backgroundColor: 'white' }}>
-    <div
-      style={{
-        width: '100vw',
-        height: '600px',
-        position: 'absolute',
-        top: 0,
-        bottom: 0,
-        left: 0,
-        right: 0,
-        margin: 'auto',
-        'text-align': 'center',
-      }}
-    >
-      <h1>
-        we're back!
-        <br />
-        apply to our projects <a href="https://www.creativelabsucla.com/"><u>here</u></a>
-      </h1>
       <div
-        style = {{
-          marginTop: '50px',
-          display: 'table',
-          horizontalAlign: 'center',
+        style={{
+          width: '100vw',
+          height: '600px',
+          position: 'absolute',
+          top: 0,
+          bottom: 0,
+          left: 0,
+          right: 0,
+          margin: 'auto',
+          'text-align': 'center',
         }}
       >
-        {data.stuff.map(proj => {
-          if(proj.name != "test"){
-            let link = "/projects/" + proj.name;
-            return (
-            <a href={link} >
-              <img src={proj.img}></img>
-            </a>
-          );
-          }})} 
+        <h3>
+          we're back!
+          <br />
+          apply to our projects{' '}
+          <a href='https://www.creativelabsucla.com/'>
+            <u>here</u>
+          </a>
+        </h3>
+        <div
+          style={{
+            marginTop: '32px',
+            display: 'table',
+            horizontalAlign: 'center',
+          }}
+        >
+          {data.stuff.map(proj => {
+            if (proj.name != 'test') {
+              let link = '/projects/' + proj.name;
+              return (
+                <a href={link}>
+                  <img src={proj.img}></img>
+                </a>
+              );
+            }
+          })}
+        </div>
       </div>
     </div>
-  </div>
   );
 }
 
