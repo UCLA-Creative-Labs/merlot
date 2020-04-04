@@ -23,7 +23,7 @@ class EggComponent extends React.Component {
       .toLowerCase()
       .replace(/\s+/g, ''); //Remove spaces and make lowercase
       console.log(this.egg.nextLevel)
-    if (userInput != this.egg.password) {
+    if (userInput != this.egg.password && this.egg.id != "") {
       alert('Nope try again. Hint: ' + this.egg.hint);
     } else {
       navigate('http://localhost:8000/eggs/' + this.egg.nextLevel);

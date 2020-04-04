@@ -1,17 +1,27 @@
 [
     {
-        "id": "level0",
+        "id": "",
         "level": 0,
         "title":"Welcome to the Jungle",
         "img":"welcometothejungle.jpg",
-        "caption":"Can you get to the next level?",
-        "password":"",
+        "caption":"What makes a frog a frog?",
+        "password":"any",
         "hint":"", 
         "nextLevel":"level1"
     },
     {
         "id": "level1",
         "level": 1,
+        "title":"Counting Labs",
+        "img":"overthere.png",
+        "caption":"Can you get to the next level?",
+        "password":"",
+        "hint":"",
+        "nextLevel":"level2"
+    },
+    {
+        "id": "level2",
+        "level": 2,
         "title":"Confusion Labs",
         "img":"designerboi.png",
         "caption":"WHO'S THAT POKEMON",
@@ -21,7 +31,7 @@
     },
     {
         "id": "creativeanagram",
-        "level": 2,
+        "level": 3,
         "title":"NaHCO3 + HC2H3O2",
         "img":"crackheadenergy.png",
         "caption":"How to pay ur tuition",
@@ -31,7 +41,7 @@
     },
     {
         "id": "worsepart",
-        "level": 2,
+        "level": 4,
         "title":"Caesar Labs",
         "img":"danny.png",
         "caption":"U DONT KNOW BABEEE",
@@ -41,17 +51,17 @@
     },
     {
         "id": "bestpart",
-        "level": 2,
+        "level": 5,
         "title":"Creek Labs",
         "img":"woodyboi.png",
         "caption":"No tricks here...",
         "password":"bidoof",
         "hint":"Generation IV",
-        "nextLevel":"40404040"
+        "nextLevel":"beepboop"
     },
     {
-        "id": "40404040",
-        "level": 2,
+        "id": "beepboop",
+        "level": 6,
         "title":"Construction Labs",
         "img":"constructionlabs.png",
         "caption":"Come back later for more!",
