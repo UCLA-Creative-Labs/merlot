@@ -82,7 +82,9 @@ function Home() {
         <h3>
           we're back!
           <br />
-          apply to our projects{' '}
+          a
+          <a style={{"text-decoration":"none"}} href='https://www.creativelabsucla.com/eggs'>pp</a>
+          ly to our projects{' '}
           <a href='https://forms.gle/C275gugRpRDbVxQN9'>
             <u>here</u>
           </a>
