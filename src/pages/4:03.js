@@ -13,18 +13,18 @@ const proj = require('../temporary/data/projects.json')[0];
 
 function Meme() {
   return (
+      <Link to='/'>
     <div style={{ width: '100vw', height: '100vh' }}>
       <div>
         <img style={{ float: 'left', width: '10%', margin: '0px' }} src={arjun}></img>
         <img style={{ float: 'right', width: '10%', margin: '0px' }} src={bryan}></img>
         <br />
         <p style={{ float: 'left' }}>this beautiful man is arjun</p>
-        <p style={{ float: 'right' }}>this beautiful man is bryan</p>
+        <p style={{ float: 'right' }}>this wonderful man is bryan</p>
       </div>
       <div
         class='meme'
         style={{
-          zIndex: '-1',
           width: 'auto',
           position: 'absolute',
           top: 0,
@@ -54,6 +54,14 @@ function Meme() {
           <p>{proj.leads.join(', ')}</p>
           <h3> what </h3>
           <p style={{ textAlign: 'center' }}>{proj.about}</p>
+          <br />
+          <p style={{ textAlign: 'center' }}>
+            <b>Mitochondria are known as the powerhouses of the cell.</b> They are organelles that act like a
+            digestive system which takes in nutrients, breaks them down, and creates energy rich molecules for
+            the cell. The biochemical processes of the cell are known as cellular respiration. Many of the
+            reactions involved in cellular respiration happen in the mitochondria. Mitochondria are the
+            organelles that keep the cell full of energy.
+          </p>
           <h3> need </h3>
           <ul>
             {proj.positions.map(need => (
@@ -61,11 +69,9 @@ function Meme() {
             ))}
           </ul>
         </div>
-        <h3>
-          <a href={proj.application}>apply here</a>
-        </h3>
       </div>
     </div>
+</Link>
   );
 }
 
