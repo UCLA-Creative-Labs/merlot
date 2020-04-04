@@ -67,14 +67,16 @@ function Home() {
         }}
       >
         <span className='hide'>
-          <form className='meme' style={{ paddingBottom: '10px' }} onSubmit={ event => {
-            event.preventDefault();
-            if (event.target[0].value === '4:03')
-              navigate('/4:03');
-            else
-              navigate('/');
-          }}>
-            <input placeholder="when was I born?"/>
+          <form
+            className='meme'
+            style={{ paddingBottom: '10px', display: 'inline-block' }}
+            onSubmit={event => {
+              event.preventDefault();
+              if (event.target[0].value === '4:03') navigate('/4:03');
+              else navigate('/');
+            }}
+          >
+            <input placeholder='when was I born?' />
           </form>
         </span>
         <h3>
