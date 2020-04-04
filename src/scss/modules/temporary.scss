@@ -93,13 +93,14 @@ img.s_img{
   display: inline-block;
   @media screen and (max-width: $break-mobile) {
     position: static;
+    display: none !important;
   }
 }
 
 img.gif{
-  @media screen and (max-width: $break-mobile) {
-    display: none !important;
-  }
+  // @media screen and (max-width: $break-mobile) {
+  //   display: none !important;
+  // }
 }
 
 div.meme {
