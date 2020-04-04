@@ -81,9 +81,10 @@ function Home() {
         </span>
         <h3>
           we're back!
-          <br />
-          a
-          <a style={{"text-decoration":"none"}} href='https://www.creativelabsucla.com/eggs'>pp</a>
+          <br />a
+          <a style={{ 'text-decoration': 'none' }} href='https://www.creativelabsucla.com/eggs'>
+            pp
+          </a>
           ly to our projects{' '}
           <a href='https://forms.gle/C275gugRpRDbVxQN9'>
             <u>here</u>

@@ -9,7 +9,6 @@ import { navigate } from '@reach/router';
 class SpecialYolk extends React.Component {
   constructor(props) {
     super();
-    console.log(props.egg);
     this.egg = props.egg;
     this.state = { value: '' };
   }
@@ -27,9 +26,7 @@ class SpecialYolk extends React.Component {
       'text-align': 'left',
       'z-index': '-1',
     };
-    console.log('rendering' + this.egg.id);
     if (this.egg.id == 'levefdsal1') {
-      console.log('speciS');
       return (
         <div>
           <div style={innerStyle}>

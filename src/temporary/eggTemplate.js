@@ -12,7 +12,6 @@ import { navigate } from '@reach/router';
 
 function Egg({ data }) {
   const egg = data.allSitePage.edges[0].node.context;
-  console.log(egg.id);
   return (
     <div style={{ width: '100vw', height: '80vh' }}>
       <EggComponent egg={egg} />
