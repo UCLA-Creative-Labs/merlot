@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 
 import Layout from '~/src/components/monads/layout';
 import SEO from '~/src/components/monads/seo';
@@ -67,9 +67,15 @@ function Home() {
         }}
       >
         <span className='hide'>
-          <a className='meme' href='/4:03'>
-            &gt; 4:03 &lt;
-          </a>
+          <form className='meme' style={{ paddingBottom: '10px' }} onSubmit={ event => {
+            event.preventDefault();
+            if (event.target[0].value === '4:03')
+              navigate('/4:03');
+            else
+              navigate('/');
+          }}>
+            <input placeholder="when was I born?"/>
+          </form>
         </span>
         <h3>
           we're back!

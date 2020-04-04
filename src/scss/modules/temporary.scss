@@ -97,15 +97,26 @@ div.meme {
   animation-iteration-count: infinite;
 }
 
-span.hide a.meme {
+span.hide .meme {
   visibility: hidden;
 }
 
-span.hide:hover a.meme {
+span.hide:hover .meme {
   visibility: visible;
   text-decoration: none;
   text-shadow: 0 2px 5px gray;
   cursor: url(http://www.rw-designer.com/cursor-extern.php?id=134808), pointer;
+}
+
+form.meme input {
+  box-shadow: 0 2px 5px gray;
+  border-radius: 50%;
+  border: 0;
+  text-align: center;
+}
+
+form.meme input:focus {
+  outline: none;
 }
 
 @keyframes MOVEBG {
