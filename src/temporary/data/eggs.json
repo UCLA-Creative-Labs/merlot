@@ -1,19 +1,63 @@
 [
     {
-        "name":"worsepart",
-        "level": 2,
-        "id": "worsepart",
-        "title":"Caesar Labs",
-        "img":"eggpic2.png",
-        "caption":"U DONT KNOW BABEEE"
+        "id": "level0",
+        "level": 0,
+        "title":"Welcome to the Jungle",
+        "img":"welcometothejungle.png",
+        "caption":"Can you get to the next level?",
+        "password":"",
+        "hint":"", 
+        "next":"level1"
     },
     {
-        "name": "bestpart",
-        "level": 3,
-        "id": "bestpart",
+        "id": "level1",
+        "level": 1,
         "title":"Confusion Labs",
-        "img":"eggpic3.png",
-        "caption":"WHO'S THAT POKEMON"
+        "img":"designerboi.png",
+        "caption":"WHO'S THAT POKEMON",
+        "password":"samchai",
+        "hint":"Bonus points if u ask someone on board ;)",
+        "next":"creativeanagram"
+    },
+    {
+        "id": "creativeanagram",
+        "level": 2,
+        "title":"NaHCO3 + HC2H3O2",
+        "img":"crackheadenergy.png",
+        "caption":"How to pay ur tuition",
+        "password":"bestpart",
+        "hint":"Sad reax only",
+        "next":"worsepart"
+    },
+    {
+        "id": "worsepart",
+        "level": 2,
+        "title":"Caesar Labs",
+        "img":"danny.png",
+        "caption":"U DONT KNOW BABEEE",
+        "password":"",
+        "hint":"",
+        "next":"damthathawt"
+    },
+    {
+        "id": "bestpart",
+        "level": 2,
+        "title":"Creek Labs",
+        "img":"woodyboi.png",
+        "caption":"No tricks here...",
+        "password":"bestpart",
+        "hint":"Generation IV",
+        "next":"40404040"
+    },
+    {
+        "id": "40404040",
+        "level": 2,
+        "title":"Construction Labs",
+        "img":"eggpic2.png",
+        "caption":"Come back later for more!",
+        "password":"",
+        "hint":"",
+        "next":""
     }
 
 ]
