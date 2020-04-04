@@ -3,7 +3,7 @@ const path = require(`path`);
 const slash = require(`slash`);
 
 const projects = require('./src/temporary/data/projects.json');
-
+const eggs = require('./src/temporary/data/eggs.json')
 // Implement the Gatsby API “createPages”. This is
 // called after the Gatsby bootstrap is finished so you have
 // access to any information necessary to programmatically
@@ -22,9 +22,12 @@ exports.createPages = ({ actions }) => {
   });
 
   const eggTemplate = path.resolve('./src/temporary/eggTemplate.js')
-  createPage({
-    path:'/eggs',
-    component: eggTemplate,
-    context: {}
+  eggs.forEach(egg => {
+    createPage({
+      path:`/eggs/${egg.id}`,
+      component: eggTemplate,
+      context: egg
   })
+});
+
 };

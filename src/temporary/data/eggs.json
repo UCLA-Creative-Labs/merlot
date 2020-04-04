@@ -1,0 +1,19 @@
+[
+    {
+        "name":"worsepart",
+        "level": 2,
+        "id": "worsepart",
+        "title":"Caesar Labs",
+        "img":"eggpic2.png",
+        "caption":"U DONT KNOW BABEEE"
+    },
+    {
+        "name": "bestpart",
+        "level": 3,
+        "id": "bestpart",
+        "title":"Confusion Labs",
+        "img":"eggpic3.png",
+        "caption":"WHO'S THAT POKEMON"
+    }
+
+]
