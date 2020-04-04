@@ -3,11 +3,11 @@
         "id": "level0",
         "level": 0,
         "title":"Welcome to the Jungle",
-        "img":"welcometothejungle.png",
+        "img":"welcometothejungle.jpg",
         "caption":"Can you get to the next level?",
         "password":"",
         "hint":"", 
-        "next":"level1"
+        "nextLevel":"level1"
     },
     {
         "id": "level1",
@@ -17,7 +17,7 @@
         "caption":"WHO'S THAT POKEMON",
         "password":"samchai",
         "hint":"Bonus points if u ask someone on board ;)",
-        "next":"creativeanagram"
+        "nextLevel":"creativeanagram"
     },
     {
         "id": "creativeanagram",
@@ -25,9 +25,9 @@
         "title":"NaHCO3 + HC2H3O2",
         "img":"crackheadenergy.png",
         "caption":"How to pay ur tuition",
-        "password":"bestpart",
+        "password":"reactive",
         "hint":"Sad reax only",
-        "next":"worsepart"
+        "nextLevel":"worsepart"
     },
     {
         "id": "worsepart",
@@ -37,7 +37,7 @@
         "caption":"U DONT KNOW BABEEE",
         "password":"",
         "hint":"",
-        "next":"damthathawt"
+        "nextLevel":"damthathawt"
     },
     {
         "id": "bestpart",
@@ -45,19 +45,19 @@
         "title":"Creek Labs",
         "img":"woodyboi.png",
         "caption":"No tricks here...",
-        "password":"bestpart",
+        "password":"bidoof",
         "hint":"Generation IV",
-        "next":"40404040"
+        "nextLevel":"40404040"
     },
     {
         "id": "40404040",
         "level": 2,
         "title":"Construction Labs",
-        "img":"eggpic2.png",
+        "img":"constructionlabs.png",
         "caption":"Come back later for more!",
         "password":"",
         "hint":"",
-        "next":""
+        "nextLevel":""
     }
 
 ]
