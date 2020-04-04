@@ -26,7 +26,7 @@ class EggComponent extends React.Component {
     if (userInput != this.egg.password && this.egg.id != "") {
       alert('Nope try again. Hint: ' + this.egg.hint);
     } else {
-      navigate('http://localhost:8000/eggs/' + this.egg.nextLevel);
+      navigate('https://www.creativelabsucla.com/eggs/' + this.egg.nextLevel);
     }
   };
   render() {
