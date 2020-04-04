@@ -9,7 +9,6 @@ import { navigate } from '@reach/router';
 class EggComponent extends React.Component {
   constructor(props) {
     super();
-    console.log(props.egg);
     this.egg = props.egg;
     this.state = { value: '' };
   }
@@ -22,7 +21,6 @@ class EggComponent extends React.Component {
     let userInput = String(this.state.value)
       .toLowerCase()
       .replace(/\s+/g, ''); //Remove spaces and make lowercase
-    console.log(this.egg.nextLevel);
     if (userInput != this.egg.password && this.egg.id != '') {
       alert('Nope try again. Hint: ' + this.egg.hint);
     } else {

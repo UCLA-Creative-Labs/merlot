@@ -16,7 +16,6 @@ function Meme(proj) {
 
 function ProjectDescription({ data }) {
   const proj = data.allSitePage.edges[0].node.context;
-  console.log(proj.id);
   if (proj.id == '4:03') {
     return Meme(proj);
   }

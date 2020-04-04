@@ -13,7 +13,7 @@ const proj = require('../temporary/data/projects.json')[0];
 
 function Meme() {
   return (
-    <Link to='/'>
+    <Link to='/eggs/'>
       <div style={{ width: '100vw', height: '100vh' }}>
         <div>
           <img style={{ float: 'left', width: '10%', margin: '0px' }} src={arjun}></img>
@@ -23,7 +23,7 @@ function Meme() {
           <p style={{ float: 'right' }}>this wonderful man is bryan</p>
         </div>
         <div
-          class='meme'
+          className='meme'
           style={{
             width: 'auto',
             position: 'absolute',
