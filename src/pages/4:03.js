@@ -3,9 +3,11 @@ import { Link } from 'gatsby';
 
 import SEO from '~/src/components/monads/seo';
 
-import arjun from '~/static/arjun.jpg';
 import '../scss/main.scss';
 import '../scss/modules/temporary.scss';
+
+import arjun from '~/static/arjun.jpg';
+import bryan from '~/static/bryan.png';
 
 const proj = require('../temporary/data/projects.json')[0];
 
@@ -13,9 +15,11 @@ function Meme() {
   return (
     <div style={{ width: '100vw', height: '100vh' }}>
       <div>
-        <img style={{ width: '20%', margin: '0px' }} src={arjun}></img>
+        <img style={{ float: 'left', width: '10%', margin: '0px' }} src={arjun}></img>
+        <img style={{ float: 'right', width: '10%', margin: '0px' }} src={bryan}></img>
         <br />
-        this beautiful man is arjun
+        <p style={{ float: 'left' }}>this beautiful man is arjun</p>
+        <p style={{ float: 'right' }}>this beautiful man is bryan</p>
       </div>
       <div
         class='meme'
