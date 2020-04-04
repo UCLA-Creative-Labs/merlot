@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 
 import Layout from '~/src/components/monads/layout';
 import SEO from '~/src/components/monads/seo';
@@ -52,6 +52,7 @@ function Home() {
   const a = { data };
   return (
     <div style={{ width: '100vw', height: '100vh', backgroundColor: 'white' }}>
+      <SEO title='Home' keywords={[`creative`, `labs`, `website`, `ucla`, `design`]} />
       <div
         style={{
           width: '100vw',
@@ -65,6 +66,19 @@ function Home() {
           'text-align': 'center',
         }}
       >
+        <span className='hide'>
+          <form
+            className='meme'
+            style={{ paddingBottom: '10px', display: 'inline-block' }}
+            onSubmit={event => {
+              event.preventDefault();
+              if (event.target[0].value === '4:03') navigate('/4:03');
+              else navigate('/');
+            }}
+          >
+            <input placeholder='when was I born?' />
+          </form>
+        </span>
         <h3>
           we're back!
           <br />
