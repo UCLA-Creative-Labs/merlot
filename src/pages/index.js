@@ -66,7 +66,10 @@ function Home() {
           'text-align': 'center',
         }}
       >
-        <a className='mem' href='/4:03'> 4:03 </a>
+        <a className='mem' href='/4:03'>
+          {' '}
+          4:03{' '}
+        </a>
         <h3>
           we're back!
           <br />
