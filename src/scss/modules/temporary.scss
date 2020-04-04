@@ -88,6 +88,21 @@ img {
   }
 }
 
+img.s_img{
+  position: absolute;
+  display: inline-block;
+  @media screen and (max-width: $break-mobile) {
+    position: static;
+    display: none !important;
+  }
+}
+
+img.gif{
+  // @media screen and (max-width: $break-mobile) {
+  //   display: none !important;
+  // }
+}
+
 div.meme {
   cursor: url(http://www.rw-designer.com/cursor-extern.php?id=134800), pointer;
   background: url(https://pngimage.net/wp-content/uploads/2018/06/guy-fieri-png-5.png) 0% 0% no-repeat;

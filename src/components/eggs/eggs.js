@@ -70,7 +70,7 @@ class EggComponent extends React.Component {
           {this.egg.level}. {this.egg.title}
         </h1>
         <center>
-          <img src={this.egg.img} style={{ width: '35%', height: '25%' }} />
+          <img src={this.egg.img} style={{ width: '30%', height: '25%' }} />
           <br />
           <p>{this.egg.caption}</p>
           {passwordForm}

@@ -33,7 +33,7 @@ export const query = graphql`
             img
             caption
             password
-            hint,
+            hint
             nextLevel
           }
         }
