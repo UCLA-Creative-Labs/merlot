@@ -1,5 +1,12 @@
 @import 'modules/temporary';
 
+.mem{
+  visibility: hidden;
+  :hover{
+    visibility: visible;
+  }
+}
+
 //HOME
 .home {
   margin-bottom: 56px;

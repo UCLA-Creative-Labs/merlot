@@ -11,9 +11,15 @@ const proj = require('../temporary/data/projects.json')[0];
 function Meme() {
   return (
     <div style={{ width: '100vw', height: '100vh' }}>
+      <div>
+        <img style={{width: '20%', margin:'0px'}} src='arjun.jpg'></img>
+        <br/>
+        this beautiful man is arjun
+      </div>
       <div
         class='meme'
         style={{
+          zIndex: '-1',
           width: 'auto',
           position: 'absolute',
           top: 0,
@@ -39,7 +45,7 @@ function Meme() {
           }}
         >
           <h1 className='bouns'>{proj.name}</h1>
-          <h3> who </h3>
+          <h3> who did this</h3>
           <p>{proj.leads.join(', ')}</p>
           <h3> what </h3>
           <p style={{ textAlign: 'center' }}>{proj.about}</p>
