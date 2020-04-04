@@ -99,14 +99,13 @@ function Home() {
               let link = '/projects/' + proj.id;
               const img = (
                 <>
-                <img className='gif'
-                  src={proj.img}
-                  onMouseOver={e => e.currentTarget.style.opacity = '0'}
-                  onMouseOut={e => e.currentTarget.style.opacity = '1'}
-                />
-                <img 
-                  src={proj.alt}
-                />
+                  <img
+                    className='gif'
+                    src={proj.img}
+                    onMouseOver={e => (e.currentTarget.style.opacity = '0')}
+                    onMouseOut={e => (e.currentTarget.style.opacity = '1')}
+                  />
+                  <img src={proj.alt} />
                 </>
               );
 
