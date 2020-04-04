@@ -100,12 +100,12 @@ function Home() {
               const img = (
                 <>
                   <img
-                    className='gif'
+                    className='s_img'
                     src={proj.img}
                     onMouseOver={e => (e.currentTarget.style.opacity = '0')}
                     onMouseOut={e => (e.currentTarget.style.opacity = '1')}
                   />
-                  <img src={proj.alt} />
+                  <img className='gif' src={proj.alt} />
                 </>
               );
 

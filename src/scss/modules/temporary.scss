@@ -88,9 +88,18 @@ img {
   }
 }
 
-img.gif{
+img.s_img{
   position: absolute;
   display: inline-block;
+  @media screen and (max-width: $break-mobile) {
+    position: static;
+  }
+}
+
+img.gif{
+  @media screen and (max-width: $break-mobile) {
+    display: none !important;
+  }
 }
 
 div.meme {
