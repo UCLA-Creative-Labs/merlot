@@ -66,7 +66,11 @@ function Home() {
           'text-align': 'center',
         }}
       >
-        <a className='mem' href='/4:03'> 4:03 </a>
+        <span className='hide'>
+          <a className='meme' href='/4:03'>
+            &gt; 4:03 &lt;
+          </a>
+        </span>
         <h3>
           we're back!
           <br />

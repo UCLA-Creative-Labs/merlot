@@ -88,13 +88,24 @@ img {
   }
 }
 
-div .meme {
+div.meme {
   cursor: url(http://www.rw-designer.com/cursor-extern.php?id=134800), pointer;
   background: url(https://pngimage.net/wp-content/uploads/2018/06/guy-fieri-png-5.png) 0% 0% no-repeat;
   animation-name: MOVEBG;
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+
+span.hide a.meme {
+  visibility: hidden;
+}
+
+span.hide:hover a.meme {
+  visibility: visible;
+  text-decoration: none;
+  text-shadow: 0 2px 5px gray;
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=134808), pointer;
 }
 
 @keyframes MOVEBG {
