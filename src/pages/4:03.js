@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 
 import SEO from '~/src/components/monads/seo';
 
+import arjun from '~/static/arjun.jpg';
 import '../scss/main.scss';
 import '../scss/modules/temporary.scss';
 
@@ -12,8 +13,8 @@ function Meme() {
   return (
     <div style={{ width: '100vw', height: '100vh' }}>
       <div>
-        <img style={{width: '20%', margin:'0px'}} src='arjun.jpg'></img>
-        <br/>
+        <img style={{ width: '20%', margin: '0px' }} src={arjun}></img>
+        <br />
         this beautiful man is arjun
       </div>
       <div
