@@ -11,6 +11,8 @@ class EggComponent extends React.Component {
     super();
     this.egg = props.egg;
     this.state = { value: '' };
+    this.domainURL = 'https://www.creativelabsucla.com/eggs/'
+    this.domainURL = 'http://localhost:8000/eggs'
   }
   handleChange(event) {
     this.setState({ value: event.target.value });
@@ -24,7 +26,7 @@ class EggComponent extends React.Component {
     if (userInput != this.egg.password && this.egg.id != '') {
       alert('Nope try again. Hint: ' + this.egg.hint);
     } else {
-      navigate('https://www.creativelabsucla.com/eggs/' + this.egg.nextLevel);
+      navigate(this.domainURL + this.egg.nextLevel);
     }
   };
   render() {
@@ -69,7 +71,7 @@ class EggComponent extends React.Component {
         </h1>
         <center>
           <img
-            src={'https://www.creativelabsucla.com/eggs/' + this.egg.img}
+            src={this.domainURL + this.egg.img}
             style={{ width: '30%', height: '25%' }}
           />
           <br />
