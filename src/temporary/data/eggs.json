@@ -57,17 +57,58 @@
         "caption":"No tricks here...",
         "password":"bidoof",
         "hint":"Generation IV",
-        "nextLevel":"beepboop"
+        "nextLevel":"broken"
     },
     {
-        "id": "beepboop",
+        "id": "broken",
         "level": 6,
         "title":"Construction Labs",
         "img":"constructionlabs.png",
         "caption":"Come back later for more!",
         "password":"",
         "hint":"",
-        "nextLevel":""
+        "nextLevel":"fixed"
+    },
+    {
+        "id": "fixed",
+        "level": 7,
+        "title":"Crash Labs",
+        "img":"churros.jpg",
+        "caption":"Piracy, it's a crime",
+        "password":"churros",
+        "hint":"Thief! Unhand my biscuit :(",
+        "nextLevel":"sleepingbeauty"
+    },
+    {
+        "id": "sleepingbeauty",
+        "level": 8,
+        "title":"Cat Labs",
+        "img":"meow.png",
+        "caption":"Meow.",
+        "password":"butmom",
+        "hint":"SpiderArmy",
+        "nextLevel":"finish"
+    },
+    {
+        "id": "finish",
+        "level": 9,
+        "title":"Good Bye",
+        "img":"fin.png",
+        "caption":"Ok...now I'm done",
+        "password":"",
+        "hint":"",
+        "nextLevel":"start"
+    },
+    {
+        "id": "start",
+        "level": 10,
+        "title":"Stop it",
+        "img":"TheEnding.png",
+        "caption":"All good things must end...",
+        "password":"",
+        "hint":"",
+        "nextLevel":"dsgfds"
     }
+
 
 ]
