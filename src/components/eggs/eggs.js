@@ -11,7 +11,7 @@ class EggComponent extends React.Component {
     super();
     this.egg = props.egg;
     this.state = { value: '' };
-    this.domainURL = 'https://www.creativelabsucla.com/eggs/'
+    this.domainURL = 'https://www.creativelabsucla.com/eggs/';
     //this.domainURL = 'http://localhost:8000/eggs/'
   }
   handleChange(event) {
@@ -70,10 +70,7 @@ class EggComponent extends React.Component {
           {this.egg.level}. {this.egg.title}
         </h1>
         <center>
-          <img
-            src={this.domainURL + this.egg.img}
-            style={{ width: '30%', height: '25%' }}
-          />
+          <img src={this.domainURL + this.egg.img} style={{ width: '30%', height: '25%' }} />
           <br />
           <p>{this.egg.caption}</p>
           {passwordForm}
