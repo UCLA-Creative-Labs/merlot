@@ -12,7 +12,7 @@ class EggComponent extends React.Component {
     this.egg = props.egg;
     this.state = { value: '' };
     this.domainURL = 'https://www.creativelabsucla.com/eggs/'
-    this.domainURL = 'http://localhost:8000/eggs'
+    //this.domainURL = 'http://localhost:8000/eggs/'
   }
   handleChange(event) {
     this.setState({ value: event.target.value });
