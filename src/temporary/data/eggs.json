@@ -27,10 +27,10 @@
         "caption":"WHO'S THAT POKEMON",
         "password":"samchai",
         "hint":"Bonus points if u ask someone on board ;)",
-        "nextLevel":"creativeanagram"
+        "nextLevel":"anagramcreative"
     },
     {
-        "id": "creativeanagram",
+        "id": "anagramcreative",
         "level": 3,
         "title":"NaHCO3 + HC2H3O2",
         "img":"crackheadenergy.png",
