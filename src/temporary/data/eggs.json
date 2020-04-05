@@ -77,14 +77,14 @@
         "caption":"Piracy, it's a crime",
         "password":"churros",
         "hint":"Thief! Unhand my biscuit :(",
-        "nextLevel":"sleepingbeauty"
+        "nextLevel":"meow"
     },
     {
-        "id": "sleepingbeauty",
+        "id": "meow",
         "level": 8,
         "title":"Cat Labs",
         "img":"meow.png",
-        "caption":"Meow.",
+        "caption":"The Fairest of Them All",
         "password":"butmom",
         "hint":"SpiderArmy",
         "nextLevel":"finish"
