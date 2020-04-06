@@ -20,7 +20,7 @@ exports.createPages = ({ actions }) => {
       context: proj
     });
   });
-
+ 
   const eggTemplate = path.resolve('./src/temporary/eggTemplate.js')
   eggs.forEach(egg => {
     createPage({
