@@ -72,7 +72,7 @@
     {
         "id": "fixed",
         "level": 7,
-        "title":"Crash Labs",
+        "title":"Civic Labs",
         "img":"churros.jpg",
         "caption":"Piracy, it's a crime",
         "password":"churros",
@@ -86,7 +86,7 @@
         "img":"quiteafairytail.jpg",
         "caption":"The Fairest of Them All",
         "password":"butmom",
-        "hint":"SpiderArmy",
+        "hint":"Perhaps you need better attention to detail",
         "nextLevel":"finish"
     },
     {
