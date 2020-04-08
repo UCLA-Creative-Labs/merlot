@@ -104,11 +104,12 @@ function Home() {
                 <>
                   <img
                     className='s_img'
+                    loading='eager'
                     src={proj.img}
                     onMouseOver={e => (e.currentTarget.style.opacity = '0')}
                     onMouseOut={e => (e.currentTarget.style.opacity = '1')}
                   />
-                  <img className='gif' src={proj.alt} />
+                  <img className='gif' loading='lazy' src={proj.alt} />
                 </>
               );
 
