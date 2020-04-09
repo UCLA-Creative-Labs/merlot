@@ -45,9 +45,11 @@ function Home() {
         <h3>
           we're back!
           <br />
-          <Typist cursor={{show: false}}>
-            <Typist.Delay ms={500}/>
-            <span>apply to our projects <ReactRotatingText cursor={false} items={a.data} /> </span>
+          <Typist cursor={{ show: false }}>
+            <Typist.Delay ms={500} />
+            <span>
+              apply to our projects <ReactRotatingText cursor={false} items={a.data} />{' '}
+            </span>
           </Typist>
         </h3>
       </div>
