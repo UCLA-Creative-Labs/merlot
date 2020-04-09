@@ -27,7 +27,9 @@
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
     "react-helmet": "^5.2.1",
-    "react-router-dom": "^5.1.2"
+    "react-rotating-text": "^1.4.1",
+    "react-router-dom": "^5.1.2",
+    "react-typist": "^2.0.5"
   },
   "devDependencies": {
     "@emotion/babel-preset-css-prop": "^10.0.17",
