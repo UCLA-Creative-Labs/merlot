@@ -29,7 +29,16 @@ class EggComponent extends React.Component {
       navigate(this.domainURL + this.egg.nextLevel);
     }
   };
+
   render() {
+    let finalPoem = 
+      <div style = {{color:"white"}}>
+      <p>There was an ugly duckling<br/>
+      Broken and brought low<br/>
+      But if its tail can change<br/>
+      There will be more to show</p>
+      </div>
+    ;
     let passwordForm = null;
     if (this.egg.password != '') {
       passwordForm = (
@@ -73,6 +82,7 @@ class EggComponent extends React.Component {
           <img src={this.domainURL + this.egg.img} style={{ width: '30%', height: '25%' }} />
           <br />
           <p>{this.egg.caption}</p>
+          {this.egg.level == 10 && finalPoem}
           {passwordForm}
         </center>
       </div>
