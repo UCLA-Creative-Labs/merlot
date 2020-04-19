@@ -8,6 +8,7 @@
     "@emotion/core": "^10.0.17",
     "gatsby": "^2.15.29",
     "gatsby-image": "^2.2.24",
+    "gatsby-plugin-google-analytics": "^2.2.4",
     "gatsby-plugin-manifest": "^2.2.20",
     "gatsby-plugin-modal-routing": "^1.0.2",
     "gatsby-plugin-netlify": "^2.2.1",
